@@ -1,0 +1,26 @@
+
+.skils-container,
+.grid-skils-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skils-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    flex-direction: column;
+}
+
+.grid-skils-container{
+    width: 100%;
+    max-width: 1280px;
+    flex-wrap: wrap;
+}
+.grid-skils-container img{
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.1),
+                -5px -5px 5px rgba(255, 255, 255, 0.3);
+}

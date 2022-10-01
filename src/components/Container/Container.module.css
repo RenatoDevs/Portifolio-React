@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.column{
+    flex-direction: column;
+}
+
+.column-padding{
+    flex-direction: column;
+    padding: 0 0 40px 0;
+}
+

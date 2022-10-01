@@ -1,0 +1,43 @@
+.boxGlassContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boxGlassContainer .card {
+    display: flex;
+    width: 100%;
+    min-height: 120px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                5px 5px 5px rgba(0, 0, 0, 0.1),
+                -5px -5px 5px rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+}
+.boxGlassContainer .card .box {
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+}
+
+.boxGlassContainer .card:hover .box {
+    filter: brightness(120%);
+    transform: translateY(-60px);
+    box-shadow: 0 10 40px rgba(0, 0, 0, 0.4);
+}
+
+.boxGlassContainer .card .box .content {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.fullWidth{
+    width: 100%;
+}
