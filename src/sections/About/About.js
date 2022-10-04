@@ -15,10 +15,10 @@ const About = () => {
         <ModelSection id='about-me'>
             <Container>
                 <div className='about'>
-                    <div className='about-title'>
+                    <div className='about-title' data-aos="fade-right">
                         <Title name='About' />
                     </div>
-                    <div className='box-description'>
+                    <div className='box-description' data-aos="zoom-in-left">
                         <p>Olá eu sou Renato dos Santos seja Bem-vindo ao meu portifólio, aqui vou dispor um pouco sobre  mim, meus projetos pessoais que irei desenvolver ao longo dos meus estudos, e da minha carreira como desenvolvedor que pretendo construir.
                         </p>
                     </div>

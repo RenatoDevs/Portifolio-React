@@ -1,0 +1,41 @@
+.gridSocialButtons,
+.gridSocialButtons ul li,
+.gridSocialButtons ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridSocialButtons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.gridSocialButtons ul li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background-color: #ccc;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.1),
+        0 0 10px rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.gridSocialButtons ul li a {
+    color: rgb(66, 66, 66);
+}
+
+.gridSocialButtons ul li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.column{
+    flex-direction: column;
+}

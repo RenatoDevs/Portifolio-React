@@ -3,7 +3,7 @@ import styles from './BoxGlass.module.css'
 
 const BoxGlass = (props) => {
     return (
-        <div className={`${styles.boxGlassContainer} ${styles[props.customClass]}`}>
+        <div data-aos="zoom-out-up" className={`${styles.boxGlassContainer} ${styles[props.customClass]}`}>
             <div className={`${styles.card}`}>
                 <div className={`${styles.box}`}>
                     <div className={styles.content}>

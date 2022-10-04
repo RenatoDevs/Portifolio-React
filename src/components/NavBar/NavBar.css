@@ -5,10 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 10px;
     transition: .5s;
-    
 }
 .navigation::after{
     content: '';

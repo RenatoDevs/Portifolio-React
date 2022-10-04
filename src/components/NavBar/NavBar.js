@@ -38,9 +38,10 @@ const NavBar = () => {
 
 
   return (
+    /*Removi o active do home*/
     <div className="navigation">
       <ul>
-        <li className="home list active">
+        <li className="home list ">
           <a href="#home">
             <span className="icon"><Bubble customClass='small-menu'><IoHomeOutline /></Bubble></span>
             <span className="text">Home</span>

@@ -13,9 +13,11 @@ const Skils = () => {
   return (
     <ModelSection id='skills' customClass='column'>
       <div className='skils-container'>
-        <Title name='skils' />
+        <div data-aos="flip-up">
+          <Title name='skils'  />
+        </div>
 
-        <div className='grid-skils-container'>
+        <div className='grid-skils-container' data-aos="zoom-out">
           {
             techsItem.map((item, i) => {
               return (

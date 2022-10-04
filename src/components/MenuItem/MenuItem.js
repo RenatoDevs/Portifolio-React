@@ -35,7 +35,7 @@ const MenuItem = ({ menuItem }) => {
                                     </div>
                                 </div>
                             </div>
-                        </BoxGlass>
+                        </BoxGlass>                      
                     )
                 })
             }

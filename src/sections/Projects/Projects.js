@@ -27,8 +27,11 @@ const Projects = () => {
   return (
     <ModelSection id='project'>
       <Container customClass='column-padding'>
-        <Title name='Projects' />
-        <FilterButton filter={filter} button={button} />
+        <div data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+          <Title name='Projects' />
+        </div>
+          <FilterButton filter={filter} button={button} />
         <MenuItem menuItem={menuItem} />
       </Container>
     </ModelSection>
