@@ -1,0 +1,57 @@
+.gridSocialButtons,
+.gridSocialButtons ul,
+.gridSocialButtons ul li,
+.gridSocialButtons ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridSocialButtons {
+    width: 100%;
+}
+
+.gridSocialButtons ul {
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    min-height: 350px;
+    z-index: 1;
+}
+
+.gridSocialButtons ul li {
+    background-color: rgb(43, 43, 43);
+    border-radius: 50px 0 0 50px  ;
+    width: 100%;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    padding:12px;
+    transition: .5s;
+    text-align: center;
+    color: #ffffff;
+    gap: 20px;
+}
+
+.gridSocialButtons ul li a {
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    font-size: 45px;
+    transition: .7s;
+}
+
+
+.gridSocialButtons ul li a {
+    color: rgb(66, 66, 66);
+}
+
+.gridSocialButtons ul li:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.gridSocialButtons ul li:hover a {
+   background-color: #ffffff;
+}

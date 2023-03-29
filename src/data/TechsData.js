@@ -1,19 +1,26 @@
 
 const TechsData = [
     {
-      name:'html'
+      name:'html',
+      conhecimento:['Semantico']
+      
     },
     {
-        name:'css'
+        name:'css',
+        conhecimento:['Responsivo','Seletores','Media-query',]
       },
       {
-        name:'javascript'
+        name:'javascript',
+        conhecimento:['Manipular DOM','Functions']
       },
       {
-        name:'react'
+        name:'react',
+        conhecimento:['Componentização','Hooks']
       },
       {
-        name:'github'
+        name:'github',
+        conhecimento:[]
+       
       },
   ]
   

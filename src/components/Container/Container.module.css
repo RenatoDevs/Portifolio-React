@@ -4,12 +4,15 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: #ccc;
 }
 .column{
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .column-padding{
+    min-height: 100vh;
     flex-direction: column;
     padding: 0 0 40px 0;
 }

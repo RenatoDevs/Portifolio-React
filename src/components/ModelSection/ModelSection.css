@@ -1,9 +1,0 @@
-.model-section-container{
-    min-height: 100vh;
-    width: 100%;
-    scroll-snap-align: start;
-    background-color: #bbb;
-}
-.model-section-container:nth-child(odd){
-    background-color: #ccc;
-}

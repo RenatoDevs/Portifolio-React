@@ -1,0 +1,179 @@
+.skills_container,
+.grid_cards_hard_skills,
+.soft_skills,
+.hard_skills,
+.card_hard_skill ul,
+.card_hard_skill,
+.grid_soft_skills,
+.grid_soft_skills ul,
+.grid_soft_skills ul li,
+.grid_soft_skills ul li p,
+.description_hard_skill,
+.description_hard_skill ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.grid_skills {
+    display: grid;
+    justify-content: stretch;
+    align-items: stretch;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+}
+
+.grid_skills img {
+    border-radius: 50%;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.1),
+        -5px -5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.soft_skills,
+.hard_skills {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.hard_skills {
+    background: linear-gradient(220deg, rgba(140, 3, 3, 0.8) 50%, rgba(193, 0, 0, 0.42) 100%);
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.527);
+}
+/*      Soft_Skills         */
+
+.grid_soft_skills {
+    width: 100%;
+    height: 60%;
+    min-height: 500px;
+}
+
+.grid_soft_skills ul {
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.grid_soft_skills ul li {
+    border-radius: 50%;
+    background-color: rgba(36, 36, 36, 0.281);
+    text-shadow: 0 0 5px black;
+    color: #fff;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    max-width: 150px;
+    min-height: 150px;
+    padding: 10px;
+    z-index: 10;
+    font-weight: bold;
+    background: linear-gradient(180deg, rgba(41, 41, 41, 0.623) 50%, rgba(1, 1, 1, 0.432) 100%);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(189, 189, 189, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.1),
+        -5px -5px 5px rgba(170, 170, 170, 0.3);
+}
+
+.grid_soft_skills ul li p {
+    text-align: center;
+    font-size: 1.1rem;
+    min-height: 50px;
+}
+
+/*      Hard_Skills     */
+.grid_cards_hard_skills {
+    width: 100%;
+    height: 70%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.card_hard_skill {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    justify-content: flex-start;
+    /* border-radius: 50%; */
+    color: rgb(36, 36, 36);
+    width: 150px;
+    height: 150px;
+    font-weight: 500;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(41, 41, 41, 0.288) 50%, rgba(1, 1, 1, 0.151) 100%);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(189, 189, 189, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.1),
+        -5px -5px 5px rgba(170, 170, 170, 0.3);
+    transition: .5s;
+
+}
+
+.card_hard_skill:hover {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+
+}
+
+.card_hard_skill:hover .description_hard_skill {
+    bottom: 0;
+}
+
+.box_bubble {
+    position: relative;
+}
+
+.description_hard_skill {
+    position: relative;
+    bottom: -55%;
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    gap: 2.5px;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(216, 216, 216, 0.616);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.507),
+        inset 0 0 5px rgba(0, 0, 0, 0.507);
+    border: 1px solid rgba(255, 255, 255, 0.562);
+    transition: 1s;
+}
+
+.description_hard_skill>h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.description_hard_skill ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 75px;
+    width: 100%;
+}
+
+.description_hard_skill li {
+    min-width: 70%;
+    text-align: center;
+    padding: 2px;
+    font-size: 1rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+
+@media (max-width:991px) {
+    .grid_skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}

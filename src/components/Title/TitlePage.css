@@ -5,7 +5,6 @@
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    margin: 15px 0 50px 0;
     font-family: sans-serif;
 }
 
@@ -14,6 +13,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
     transform-origin: bottom;
     transform: rotateX(180deg);
     line-height: 0.865em;
@@ -22,3 +22,8 @@
     color: transparent;
     opacity: 0.7;
 }
+/* @media (max-width:800px) {
+    .title-page{
+        font-size: calc(25px + 10vw);
+    }
+} */

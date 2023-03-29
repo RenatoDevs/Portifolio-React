@@ -1,39 +1,35 @@
-.grid-filtered-button{
+.grid_filtered_button{
     width: 100%;
-    max-width: 1300px;
+    z-index: 1;
+    max-width: 1000px;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
-    border-radius: 30px;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
                 inset -5px -5px 5px rgba(255, 255, 255, 0.5),
                 5px 5px 5px rgba(0, 0, 0, 0.2),
                 -5px -5px 5px rgba(255, 255, 255, 0.3);
     margin:30px 0;
+    border-radius: 30px;
 }
-.filtered-button{
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    flex: 1 1 15%;
+.filtered_button{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    flex: 1 1 100px;
     text-align: center;
-    border-radius: 20px ;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: bold;
     border: 1px solid rgb(255, 255, 255, 0.3);
     cursor: pointer;
-    transition:.5s;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-                5px 5px 5px rgba(0, 0, 0, 0.2),
-                -5px -5px 5px rgba(255, 255, 255, 0.3);
-}
-.filtered-button:hover{
-    background-color: rgba(255, 0, 0, 0.123);
-    border: 1px solid rgba(236, 0, 0, 0.507);
-    transform: scale(1.05);
     color: #fff;
+    transition:.5s;
+    border-radius: 30px;
+}
+.filtered_button:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
     font-weight: bold;
 }

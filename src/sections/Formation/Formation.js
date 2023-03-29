@@ -14,13 +14,10 @@ const Formation = () => {
     return (
         <ModelSection id='formation'>
             <div className='formation-container'>
-                <div className='formation-title' data-aos="fade-left">
+                <div className='formation-title'>
                     <Title name='Formation' />
                 </div>
-                <div className='grid-formation'
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine">
+                <div className='grid-formation'>
                     <div>
                         {
                             formationItem.map((item, i) => {

@@ -1,9 +1,9 @@
-import React from 'react'
-
-import './About.css'
+import styles from './About.module.css';
 import Title from '../../components/Title/TitlePage';
 import ModelSection from '../../components/ModelSection/ModelSection';
-import Container from '../../components/Container/Container';
+import foto from '../../assets/img/eu2.png';
+
+import React from 'react';
 
 
 const About = () => {
@@ -12,18 +12,20 @@ const About = () => {
         a frente uma foto minha e ao lado a descrição 
     */
     return (
-        <ModelSection id='about-me'>
-            <Container>
-                <div className='about'>
-                    <div className='about-title' data-aos="fade-right">
+        <ModelSection>
+            <div className={styles.about}>
+                <div className={styles.image}>
+                    <img src={foto} alt='#'></img>
+                </div>
+
+                <div className={styles.box_description}>
+                    <div className={styles.box_title}>
                         <Title name='About' />
                     </div>
-                    <div className='box-description' data-aos="zoom-in-left">
-                        <p>Olá eu sou Renato dos Santos seja Bem-vindo ao meu portifólio, aqui vou dispor um pouco sobre  mim, meus projetos pessoais que irei desenvolver ao longo dos meus estudos, e da minha carreira como desenvolvedor que pretendo construir.
-                        </p>
-                    </div>
+                    <p>Olá eu sou Renato dos Santos seja Bem-vindo ao meu portifólio, aqui vou dispor um pouco sobre  mim, meus projetos pessoais que irei desenvolver ao longo dos meus estudos, e da minha carreira como desenvolvedor que pretendo construir.
+                    </p>
                 </div>
-            </Container>
+            </div>
         </ModelSection>
     )
 }

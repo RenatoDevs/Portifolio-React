@@ -9,13 +9,13 @@
 .boxGlassContainer .card {
     display: flex;
     width: 100%;
-    min-height: 120px;
+    min-height: 100px;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
                 inset -5px -5px 5px rgba(255, 255, 255, 0.5),
                 5px 5px 5px rgba(0, 0, 0, 0.1),
                 -5px -5px 5px rgba(255, 255, 255, 0.3);
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
 }
 .boxGlassContainer .card .box {
     width: 100%;
@@ -28,7 +28,7 @@
 
 .boxGlassContainer .card:hover .box {
     filter: brightness(120%);
-    transform: translateY(-60px);
+    transform: translateY(-40px);
     box-shadow: 0 10 40px rgba(0, 0, 0, 0.4);
 }
 

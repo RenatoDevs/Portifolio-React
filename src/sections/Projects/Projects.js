@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ProjectData from '../../data/ProjectData';
 import MenuItem from '../../components/MenuItem/MenuItem'
-import FilterButton from '../../components/FilterButton/FilteredButton';
 
 import "./Projects.css";
 import Title from '../../components/Title/TitlePage';
 import ModelSection from '../../components/ModelSection/ModelSection';
-import Container from '../../components/Container/Container';
+import FilterButton from '../../components/FilterButton/FilteredButton';
 
 const allButtons = ['ALL', ...new Set(ProjectData.map(item => item.category))];
 
@@ -24,16 +23,17 @@ const Projects = () => {
     const filteredData = ProjectData.filter(item => item.category === button);
     setMenuItems(filteredData);
   }
+
+  useEffect(() => {
+    setMenuItems(menuItem)
+  }, []);
   return (
-    <ModelSection id='project'>
-      <Container customClass='column-padding'>
-        <div data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom">
-          <Title name='Projects' />
-        </div>
-          <FilterButton filter={filter} button={button} />
-        <MenuItem menuItem={menuItem} />
-      </Container>
+    <ModelSection customClass='space-evenly'>
+      <div>
+        <Title name='Projetos' />
+      </div>
+      <FilterButton filter={filter} button={button} />
+      <MenuItem menuItem={menuItem} />
     </ModelSection>
   )
 }

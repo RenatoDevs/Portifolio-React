@@ -1,85 +1,61 @@
 import React from 'react'
-import { IoChatboxOutline, IoDesktopOutline, IoHomeOutline, IoPersonOutline, IoPlanetOutline, IoSchool, IoSchoolOutline } from 'react-icons/io5';
+import { IoChatboxOutline, IoDesktopOutline, IoHomeOutline, IoPersonOutline, IoPlanetOutline, IoSchoolOutline } from 'react-icons/io5';
+import { NavLink } from 'react-router-dom';
 import Bubble from '../Bubble/Bubble';
-import './NavBar.css'
+import styles from './NavBar.module.css'
 
 const NavBar = () => {
-  const sections = document.querySelectorAll("section");
-  const navLi = document.querySelectorAll("nav .container ul li");
-  const list = document.querySelectorAll('.list');
-
-
-  // window.addEventListener("scroll", () => {
-  //   let current = "";
-  //   sections.forEach((section) => {
-  //     const sectionTop = section.offsetTop;
-  //     const sectionHeight = section.clientHeight;
-  //     const windowTop = document.documentElement.scrollTop;
-  //     if (scrollY >= sectionTop - sectionHeight / 3) {
-  //       current = section.getAttribute("id");
-  //     }
-  //   });
-
-  //   list.forEach((li) => {
-  //     li.classList.remove("active");
-  //     if (li.classList.contains(current)) {
-  //       li.classList.add("active");
-  //     }
-
-  //   });
-  // });
-
-  function activeLink() {
-    list.forEach((item) =>
-      item.classList.remove('active'));
-    this.classList.add('active');
-  }
-  list.forEach((item) => item.addEventListener('click', activeLink))
-
 
   return (
-    /*Removi o active do home*/
-    <div className="navigation">
-      <ul>
-        <li className="home list ">
-          <a href="#home">
-            <span className="icon"><Bubble customClass='small-menu'><IoHomeOutline /></Bubble></span>
-            <span className="text">Home</span>
-          </a>
-        </li>
-        <li className="about-me list">
-          <a href="#about-me">
-            <span className="icon"><Bubble customClass='small-menu'><IoPersonOutline /></Bubble></span>
-            <span className="text">About</span>
-          </a>
-        </li>
-        <li className="formation list">
-          <a href="#formation">
-            <span className="icon"><Bubble customClass='small-menu'><IoSchoolOutline/></Bubble></span>
-            <span className="text">Formation</span>
-          </a>
-        </li>
-        <li className="skills list">
-          <a href="#skills">
-            <span className="icon"><Bubble customClass='small-menu'><IoPlanetOutline /></Bubble></span>
-            <span className="text">Skills</span>
-          </a>
-        </li>
-        <li className="project list">
-          <a href="#project">
-            <span className="icon"><Bubble customClass='small-menu'><IoDesktopOutline /></Bubble></span>
-            <span className="text">Project</span>
-          </a>
-        </li>
-        <li className="contact list">
-          <a href="#contact">
-            <span className="icon"><Bubble customClass='small-menu'><IoChatboxOutline /></Bubble></span>
-            <span className="text">Contact</span>
-          </a>
-        </li>
-        <div className="indicator"></div>
-      </ul>
+    <div className={styles.nav}>
+      <div className={styles.navigation}>
+        <ul >
+          <li className={styles.home}>
+            <NavLink to='/' className={({ isActive }) => (isActive ? styles.active : '')}>
+              <span className={styles.icon}><Bubble customClass='small-menu'><IoHomeOutline /></Bubble></span>
+              <span className={styles.text}>Home</span>
+            </NavLink>
+          </li>
+          <li className={styles.about}>
+            <NavLink to='/about' className={({ isActive }) => (isActive ? styles.active : '')}>
+              <span className={styles.icon}><Bubble customClass='small-menu'><IoPersonOutline /></Bubble></span>
+              <span className={styles.text}>About</span>
+            </NavLink>
+          </li>
+          
+          <li className={styles.skills}>
+            <NavLink to='/skills' className={({ isActive }) => (isActive ? styles.active : '')}>
+              <span className={styles.icon}><Bubble customClass='small-menu'><IoPlanetOutline /></Bubble></span>
+              <span className={styles.text}>Skills</span>
+            </NavLink>
+          </li>
+          <li className={styles.formation}>
+            <NavLink to='/formation' className={({ isActive }) => (isActive ? styles.active : '')}>
+              <span className={styles.icon}><Bubble customClass='small-menu'><IoSchoolOutline /></Bubble></span>
+              <span className={styles.text}>Formation</span>
+            </NavLink>
+          </li>
+          <li className={styles.project}>
+            <NavLink to='/projects' className={({ isActive }) => (isActive ? styles.active : '')}>
+              <span className={styles.icon}><Bubble customClass='small-menu'><IoDesktopOutline /></Bubble></span>
+              <span className={styles.text}>Project</span>
+            </NavLink>
+          </li>
+          <li className={styles.contact}>
+            <NavLink to='/contact' className={({ isActive }) => (isActive ? styles.active : '')}>
+              <span className={styles.icon}><Bubble customClass='small-menu'><IoChatboxOutline /></Bubble></span>
+              <span className={styles.text}>Contact</span>
+            </NavLink>
+          </li>
+          {/* <li className={styles.curriculo}>
+            <NavLink to='/cv' className={({ isActive }) => (isActive ? styles.active : '')}>
+              <span className={styles.icon}><Bubble customClass='small-menu'><IoSchoolOutline /></Bubble></span>
+              <span className={styles.text}>CV</span>
+            </NavLink>
+          </li> */}
+        </ul>
 
+      </div >
     </div>
   )
 }

@@ -23,9 +23,9 @@
     transition: .5s;
     overflow: hidden;
 }
-.large.drop:hover{
+/* .large.drop:hover{
     transform: scale(1.1) translateY(-20px);
-}
+} */
 .drop::before{
     content: '';
     position: absolute;
@@ -53,17 +53,27 @@
     width: 80%;
 }
 .large{
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
+    margin:10px;
+}
+.medium{
+    width: 100px;
+    height: 100px;
     margin:10px;
 }
 .small{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin:0 3px;
 }
 .small-menu{
     width: 50px;
     height: 50px;
     padding: 10px;
+}
+.small-desc{
+    width: 70px;
+    height: 70px;
+    padding: 3px;
 }

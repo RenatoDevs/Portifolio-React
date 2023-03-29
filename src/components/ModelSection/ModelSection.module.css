@@ -1,0 +1,19 @@
+.model_section_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #bbb;
+}
+/* .model-section-container:nth-child(odd){
+    background-color: #ccc;
+} */
+
+.model_section_container.flex-start{
+    justify-content: flex-start;
+}
+.model_section_container.space-evenly{
+    justify-content: space-evenly;
+}
