@@ -1,13 +1,12 @@
 .grid_filtered_button{
-    width: 100%;
     z-index: 1;
-    max-width: 1000px;
+    max-width: 400px;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
+    padding: 5px;
+    gap: 3px;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
                 inset -5px -5px 5px rgba(255, 255, 255, 0.5),
                 5px 5px 5px rgba(0, 0, 0, 0.2),
@@ -16,9 +15,8 @@
     border-radius: 30px;
 }
 .filtered_button{
-    background-color: rgb(0, 0, 0);
     padding: 5px;
-    flex: 1 1 100px;
+    background-color: #b1b1b1;
     text-align: center;
     font-size: 1.3em;
     font-weight: bold;
@@ -26,10 +24,10 @@
     cursor: pointer;
     color: #fff;
     transition:.5s;
-    border-radius: 30px;
+    border-radius: 25px;
 }
 .filtered_button:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(218, 218, 218);
     color: #000000;
     font-weight: bold;
 }

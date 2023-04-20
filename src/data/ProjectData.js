@@ -35,7 +35,7 @@ const ProjectData = [
   },
   {
     id: 3,
-    category: 'HTMl',
+    category: 'HTML',
     img: 'studio-moveis-vendas',
     title: 'StudioMoveis Store',
     description: 'Este projeto eu desenvolvi para simular uma loja virtual, apenas no layout, para treinar HTML e CSS como responsividade e posicionamentos, além de um pouco de Javascript no menu e nos slides. ',
@@ -57,7 +57,7 @@ const ProjectData = [
   },
   {
     id: 5,
-    category: 'HTMl',
+    category: 'HTML',
     img: 'studio-moveis-plan',
     title: 'StudioMoveis',
     description: 'Este projeto eu desenvolvi como uma página de uma empresa de moveis planejados para treinar HTML e CSS como responsividade e posicionamentos, Javascript no menu. ',
@@ -90,7 +90,7 @@ const ProjectData = [
     id: 8,
     category: 'React',
     img: 'cost',
-    title: 'Cost',
+    title: 'Costs',
     description: 'O Cost é uma aplicação web para gerenciamento financeiro, para a contabilização dos recursos para a realização de projetos, este projeto foi desenvolvido durante um curso do Matheus Batisti, para aprendizado e fixação do react. ',
     // link: 'cocaCola',
     tec: ['React', 'javascript', 'css'],
@@ -196,7 +196,7 @@ const ProjectData = [
   },
   {
     id: 17,
-    category: 'JavaScript',
+    category: 'React',
     img: 'quiz',
     title: 'Quiz',
     description: '',

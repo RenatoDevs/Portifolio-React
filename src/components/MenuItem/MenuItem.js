@@ -10,6 +10,7 @@ const MenuItem = ({ menuItem }) => {
                 menuItem.map((item, i) => {
                     return (
                         <div className={styles.item} key={i} >
+                            <span className={styles.stamp}/>
                             <img src={`../public-images/capas/${item.img}.png`} alt=""></img>
                             <div className={styles.item_description}>
                                 <div className={styles.title_container}>

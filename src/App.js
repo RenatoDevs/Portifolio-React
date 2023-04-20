@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 import './App.css';
 import Container from './components/Container/Container';
 import Home from './sections/Home/Home';
@@ -12,8 +13,20 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import Curriculo from './sections/Curriculo/Curriculo';
 
-function App() {
+import { BsMoon, BsSun } from "react-icons/bs";
 
+function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, []);
+
+  
+ 
   return (
     <Container customClass='column'>
       <BrowserRouter>
@@ -21,7 +34,7 @@ function App() {
         <Routes>
           <Route path='/' exact={true} element={<Home />} />
           <Route path='/about' element={<About />} />
-          {/* <Route path='/cv' element={<Curriculo />} /> */}
+          <Route path='/cv' element={<Curriculo />} />
           <Route path='/formation' element={<Formation />} />
           <Route path='/skills' element={<Skills />} />
           <Route path='/projects' element={<Projects />} />

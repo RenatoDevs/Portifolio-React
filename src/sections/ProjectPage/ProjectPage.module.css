@@ -16,7 +16,7 @@
     width: 100%;
     padding: 10px;
     height: 10vh;
-    background: linear-gradient(220deg, rgb(140, 3, 3) 50%, rgba(193, 0, 0, 0.671) 100%);
+    background: var(--red-gradiente);
     box-shadow: 5px 0 20px black;
     position: relative;
     margin-bottom: 30px;
@@ -31,7 +31,6 @@
 }
 .project_title h1 {
     font-size: 3em;
-    color: rgb(255, 255, 255);
     z-index: 10;
     text-shadow: 2px 2px 5px #000;
 }
@@ -73,7 +72,6 @@
 
 .box_description h2 {
     border-bottom: 3px solid #3d3d3d;
-    color: #363636;
     font-weight: 2em;
     font-weight: bold;
 }
@@ -92,8 +90,6 @@
     text-align: justify;
     padding: 10px;
     max-width: 1700px;
-    color: rgb(40, 40, 40);
-    
 }
 
 .tec {

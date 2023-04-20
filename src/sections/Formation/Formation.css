@@ -4,7 +4,8 @@
 .formation-date,
 .formation-data,
 .formation-icon,
-.formation-item .coutent{
+.formation-item,
+.timeline-formation{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,7 @@
     justify-content: space-evenly;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 .formation-title{
     width: 100%;
@@ -34,19 +35,12 @@
     align-items: stretch;
 }
 .timeline-formation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width:30px;
     position: relative;
 }
 
-
 .timeline-formation-ball{
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-                5px 5px 5px rgba(0, 0, 0, 0.1),
-                -5px -5px 5px rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-color);
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -62,10 +56,7 @@
     height: 40px;
     left: 45%;
     border-radius: 30px;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-                5px 5px 5px rgba(0, 0, 0, 0.2),
-                -5px -5px 5px rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-color);
 }
 .timeline-formation-ball::after{ 
     top: -45px;
@@ -102,5 +93,4 @@
     flex-direction: column;
     align-items: flex-start;
     background: linear-gradient(45deg, #0226b8c5, #f21313c2);
-    
 }

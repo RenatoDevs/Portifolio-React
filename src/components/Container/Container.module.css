@@ -3,8 +3,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     overflow: hidden;
-    background-color: #ccc;
+    transition: .6s;
+}
+.container.light{
+    background-color: var(--light-color);
+    color:var(--light-text-color);
+}
+.container.dark{
+    background-color: var(--dark-color);
+    color:var(--dark-text-color);
+}
+.container.light input,textarea{
+    background-color: var(--light-color);
+    color:var(--light-text-color);
+}
+.container.dark input, textarea{
+    background-color: var(--dark-color);
+    color:var(--dark-text-color);
 }
 .column{
     flex-direction: column;
@@ -17,3 +34,23 @@
     padding: 0 0 40px 0;
 }
 
+.light_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border: none;
+    width: 45px;
+    height: 45px;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+    background-color: #ccc;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.1),
+        0 0 10px rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        cursor:pointer;
+    font-size:25px;
+}

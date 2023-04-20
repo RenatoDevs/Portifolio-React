@@ -3,16 +3,19 @@ import styles from './Home.module.css';
 import ModelSection from '../../components/ModelSection/ModelSection';
 import foto from '../../assets/img/eu2.png';
 import SocialButtons from '../../components/SocialButtons/SocialButtons';
+import Loader from '../../components/Loader/Loader';
 
 const Home = () => {
     return (
-        <ModelSection >
-            <div className={styles.social}>
-                <SocialButtons customClass='column' />
-            </div>
-            <div className={styles.name} >
-                <div className={styles.box_image}>
-                    <img src={foto} alt='#'></img>
+        <Loader>
+            <ModelSection >
+                <div className={styles.social}>
+                    <SocialButtons customClass='column' />
+                </div>
+                <div className={styles.box_image} >
+                    <div className={styles.image}>
+                        <img src={foto} alt='#'></img>
+                    </div>
                 </div>
                 <div className={styles.box_name}>
                     <div data-text="Hi i'm" className={styles.first_name}>
@@ -35,9 +38,9 @@ const Home = () => {
                         <span>Front End Developer</span>
                     </div>
                 </div>
-            </div>
 
-        </ModelSection>
+            </ModelSection>
+        </Loader>
     )
 }
 

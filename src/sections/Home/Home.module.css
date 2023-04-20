@@ -1,84 +1,75 @@
-.name,
+.box_image,
 .first_name,
 .last_name,
 .box_name,
 .job,
-.box_image {
+.image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.social{
+.social {
     position: absolute;
-    right: 20px;
-    top: 20%;
+    right: 10px;
+    top: 10%;
     z-index: 1;
-}
-.name {
-    width: 100%;
-    min-height: 90vh;
-    flex-direction: column;
-    font-weight: 800;
-    background: linear-gradient(220deg, rgba(140, 3, 3, 0.8) 50%, rgba(193, 0, 0, 0.42) 100%),
-        url(../../assets/img/santo-andre-noite.png) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    text-align: left;
 }
 
 .box_image {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    min-height: 90vh;
+    flex-direction: column;
+    background: var(--red-gradiente),
+        url(../../assets/img/santo-andre-noite.png) no-repeat center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 65%);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.box_image img {
+.image {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+
+}
+
+.image img {
     width: 100%;
     max-width: 600px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-10%,-40%);
+    transform: translate(-30%, -65%);
     z-index: 0;
 }
 
-.box_image::before {
-    content: '';
-    width: 100%;
-    min-height: 35vh;
-    background-color: #bbb;
-    clip-path: polygon(0 0, 100% 60%, 100% 100%, 0% 100%);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.box_name span {
-    font-size: calc(20px + 10vw);
-    line-height: calc(20px + 6vw);
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
-    
-}
-.box_name span:not(first-child) {
-    margin-left: -0.18em;
-}
 .box_name {
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
     max-width: 1300px;
     padding: 0 0 0 20px;
     flex-wrap: wrap;
     position: absolute;
-    bottom: 150px;
+    bottom: 160px;
     z-index: 1;
+    font-weight: 800;
+}
+
+.box_name span {
+    font-size: calc(20px + 7vw);
+    line-height: calc(20px + 6vw);
+    color: var(--title-color);
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
+}
+
+.box_name span:not(first-child) {
+    margin-left: -0.18em;
 }
 
 .first_name,
@@ -94,12 +85,12 @@
     width: 100%;
     line-height: 10px;
     font-size: calc(20px + 2vw);
-    line-height: calc(20px + 2vw);
+    line-height: calc(20px + 1vw);
     content: attr(data-text);
-    color: #fff;
+    color: var(--title-color);
     position: absolute;
     text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.7);
-    transform: translate(-5%, -103%);
+    transform: translate(-5.2%, -103%);
     top: 0;
     left: 0;
 }
@@ -114,21 +105,15 @@
 }
 
 .job span {
-    font-size: calc(10px + 5vw);
-    line-height: 3vw;
+    font-size: 60px;
+    line-height: 40px;
 }
 
 @media (max-width:800px) {
     .box_name span {
-        font-size: 80px;
+        font-size: 90px;
         line-height: 60px;
     }
-
-    .box_image::before {
-        clip-path: polygon(0 10%, 100% 40%, 100% 100%, 0% 100%);
-        min-height: 60vh;
-    }
-
     .job span {
         font-size: 60px;
         line-height: 40px;
@@ -140,15 +125,15 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -80%);
+        transform: translate(-50%, -65%);
         z-index: 0;
     }
-    
+
 
 }
 
 @media (min-width:1300px) {
-    .name span {
+    .box_name span {
         font-size: 130px;
         line-height: 90px;
     }

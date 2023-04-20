@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
 import styles from './ModelSection.module.css';
 
-const ModelSection = (props) => {
+const ModelSection = ({ children, customClass }) => {
+
     return (
         <div
-            className={`${styles.model_section_container} ${styles[props.customClass]}`}
+            className={`${styles.model_section_container}`}
             animate={{ x: [50, 0] }}
             transition={{ type: "spring", stiffness: 100 }}
         >
-            {props.children}
-        </div>
+            {children}
+        </div >
     )
 }
 

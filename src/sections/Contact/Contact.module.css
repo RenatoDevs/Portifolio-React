@@ -39,7 +39,7 @@
   position: absolute;
   width: 50%;
   height: 100%;
-  background: linear-gradient(220deg, rgba(140, 3, 3, 0.8) 50%, rgba(193, 0, 0, 0.42) 100%);
+  background: var(--red-gradiente);
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.527);
 }
 
@@ -58,51 +58,43 @@
   font-size: 1.2em;
   gap: 5px;
   width: 100%;
-  color: #fff;
   font-weight: 500;
+  
 }
 
 .desc_contact form label input,
-.desc_contact form label textarea {
+.desc_contact form label textarea,
+.desc_contact input[type='submit'] {
   width: 100%;
   border: none;
   outline: none;
   font-size: 1em;
+  border-radius: 5px;
   background-color: transparent;
-  border-bottom: 2px solid black;
   margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: var(--shadow-color);          
 }
-
 .desc_contact form label textarea {
-  min-height: 50px;
-}
-
-.desc_contact input[type='submit'] {
-  width: 100%;
-  font-size: 1.5em;
-  padding: 5px;
-  border: none;
-  background-color: #000;
-  color: #fff;
-  transition: .5s ease-in-out;
+  min-height: 100px;
 }
 
 .desc_contact input[type='submit']:hover {
-  background-color: #fff;
-  color: #000;
+  background: var(--red-gradiente);
   cursor: pointer;
+  
 }
-
-.desc_contact h1 {
-  font-size: 2.4em;
-  color: rgb(255, 255, 255);
+.desc_contact input[type='submit']{
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .desc_contact p {
-  font-size: 1.2em;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width:900px) {

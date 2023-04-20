@@ -6,6 +6,7 @@
     text-transform: uppercase;
     position: relative;
     font-family: sans-serif;
+    margin: 30px 0 15px 0;
 }
 
 .title-page:before {
@@ -22,8 +23,8 @@
     color: transparent;
     opacity: 0.7;
 }
-/* @media (max-width:800px) {
+@media (max-width:800px) {
     .title-page{
-        font-size: calc(25px + 10vw);
+        font-size: calc(25px + 9vw);
     }
-} */
+}

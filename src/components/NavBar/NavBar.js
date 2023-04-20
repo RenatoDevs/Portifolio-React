@@ -1,14 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { IoChatboxOutline, IoDesktopOutline, IoHomeOutline, IoPersonOutline, IoPlanetOutline, IoSchoolOutline } from 'react-icons/io5';
+import { BsFillSunFill, BsSun } from "react-icons/bs";
 import { NavLink } from 'react-router-dom';
 import Bubble from '../Bubble/Bubble';
 import styles from './NavBar.module.css'
 
-const NavBar = () => {
+const NavBar = ({ toggle }) => {
 
   return (
     <div className={styles.nav}>
-      <div className={styles.navigation}>
+      <div className={`${styles.navigation} `}>
         <ul >
           <li className={styles.home}>
             <NavLink to='/' className={({ isActive }) => (isActive ? styles.active : '')}>
@@ -22,7 +23,7 @@ const NavBar = () => {
               <span className={styles.text}>About</span>
             </NavLink>
           </li>
-          
+
           <li className={styles.skills}>
             <NavLink to='/skills' className={({ isActive }) => (isActive ? styles.active : '')}>
               <span className={styles.icon}><Bubble customClass='small-menu'><IoPlanetOutline /></Bubble></span>

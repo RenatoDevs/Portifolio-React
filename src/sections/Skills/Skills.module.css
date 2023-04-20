@@ -25,10 +25,7 @@
 
 .grid_skills img {
     border-radius: 50%;
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-        5px 5px 5px rgba(0, 0, 0, 0.1),
-        -5px -5px 5px rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-color) ;
 }
 
 .soft_skills,
@@ -39,7 +36,7 @@
 }
 
 .hard_skills {
-    background: linear-gradient(220deg, rgba(140, 3, 3, 0.8) 50%, rgba(193, 0, 0, 0.42) 100%);
+    background: var(--red-gradiente);
     box-shadow: -10px 0 15px rgba(0, 0, 0, 0.527);
 }
 /*      Soft_Skills         */
@@ -60,7 +57,6 @@
 
 .grid_soft_skills ul li {
     border-radius: 50%;
-    background-color: rgba(36, 36, 36, 0.281);
     text-shadow: 0 0 5px black;
     color: #fff;
     text-align: center;
@@ -71,11 +67,8 @@
     padding: 10px;
     z-index: 10;
     font-weight: bold;
-    background: linear-gradient(180deg, rgba(41, 41, 41, 0.623) 50%, rgba(1, 1, 1, 0.432) 100%);
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-        inset -5px -5px 5px rgba(189, 189, 189, 0.5),
-        5px 5px 5px rgba(0, 0, 0, 0.1),
-        -5px -5px 5px rgba(170, 170, 170, 0.3);
+    
+    box-shadow: var(--shadow-color);
 }
 
 .grid_soft_skills ul li p {
@@ -94,27 +87,24 @@
     z-index: 1;
 }
 
-.card_hard_skill {
+/* .card_hard_skill {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
     justify-content: flex-start;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     color: rgb(36, 36, 36);
     width: 150px;
     height: 150px;
     font-weight: 500;
     flex-direction: column;
     background: linear-gradient(180deg, rgba(41, 41, 41, 0.288) 50%, rgba(1, 1, 1, 0.151) 100%);
-    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
-        inset -5px -5px 5px rgba(189, 189, 189, 0.5),
-        5px 5px 5px rgba(0, 0, 0, 0.1),
-        -5px -5px 5px rgba(170, 170, 170, 0.3);
+    box-shadow:var(--shadow-color);
     transition: .5s;
 
-}
+} */
 
-.card_hard_skill:hover {
+/* .card_hard_skill:hover {
     width: 200px;
     height: 300px;
     border-radius: 10px;
@@ -124,7 +114,7 @@
 
 .card_hard_skill:hover .description_hard_skill {
     bottom: 0;
-}
+} */
 
 .box_bubble {
     position: relative;
@@ -140,10 +130,7 @@
     flex-direction: column;
     text-align: center;
     background-color: rgba(216, 216, 216, 0.616);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.507),
-        inset 0 0 5px rgba(0, 0, 0, 0.507);
-    border: 1px solid rgba(255, 255, 255, 0.562);
-    transition: 1s;
+    box-shadow: var(--shadow-color);
 }
 
 .description_hard_skill>h1 {

@@ -12,18 +12,13 @@ const FormationData = [
     },
     {
       date:'Fev 2022 - 26 horas',
-      name:'HTML e CSS (1, 2 e 3)',
-      college:'Alura'
-    },
-    {
-      date:'Fev 2022 - 26 horas',
       name:'JavaScript 1',
       college:'Alura'
     },
     {
       date:'Jun 2022 - 26 horas',
-      name:'React JS',
-      college:'Alura'
+      name:'React JS do zero a maestria',
+      college:'Udemy'
     },
     
   ]

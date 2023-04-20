@@ -1,22 +1,18 @@
 .gridSocialButtons,
+.gridSocialButtons ul,
 .gridSocialButtons ul li,
 .gridSocialButtons ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.gridSocialButtons ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+.gridSocialButtons ul{
+    gap: 10px;
 }
-
 .gridSocialButtons ul li {
     list-style: none;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     padding: 3px;
     background-color: #ccc;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
@@ -37,6 +33,6 @@
     transform: scale(1.1);
 }
 
-.column{
+.column {
     flex-direction: column;
 }

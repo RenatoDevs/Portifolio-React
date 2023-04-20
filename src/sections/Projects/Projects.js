@@ -6,6 +6,7 @@ import "./Projects.css";
 import Title from '../../components/Title/TitlePage';
 import ModelSection from '../../components/ModelSection/ModelSection';
 import FilterButton from '../../components/FilterButton/FilteredButton';
+import Loader from '../../components/Loader/Loader';
 
 const allButtons = ['ALL', ...new Set(ProjectData.map(item => item.category))];
 
@@ -28,13 +29,16 @@ const Projects = () => {
     setMenuItems(menuItem)
   }, []);
   return (
-    <ModelSection customClass='space-evenly'>
-      <div>
-        <Title name='Projetos' />
-      </div>
-      <FilterButton filter={filter} button={button} />
-      <MenuItem menuItem={menuItem} />
-    </ModelSection>
+    <Loader>
+      <ModelSection customClass='space-evenly'>
+        <div>
+          <Title name='Projetos' />
+        </div>
+        <FilterButton filter={filter} button={button} />
+        <MenuItem menuItem={menuItem} />
+      </ModelSection>
+    </Loader>
+
   )
 }
 
