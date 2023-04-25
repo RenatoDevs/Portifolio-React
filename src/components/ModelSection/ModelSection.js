@@ -1,8 +1,6 @@
-import { motion } from 'framer-motion';
 import styles from './ModelSection.module.css';
 
 const ModelSection = ({ children, customClass }) => {
-
     return (
         <div
             className={`${styles.model_section_container}`}

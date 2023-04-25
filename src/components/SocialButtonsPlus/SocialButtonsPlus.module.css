@@ -26,7 +26,6 @@
     width: 90%;
     height: 90px;
     justify-content: flex-start;
-    align-items: center;
     padding:12px;
     transition: .5s;
     text-align: center;
@@ -46,10 +45,11 @@
 
 .gridSocialButtons ul li a {
     color: rgb(66, 66, 66);
+    cursor: pointer;
 }
 
 .gridSocialButtons ul li:hover {
-    cursor: pointer;
+    
     transform: scale(1.1);
 }
 

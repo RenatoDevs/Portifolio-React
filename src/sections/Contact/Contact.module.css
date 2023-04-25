@@ -76,7 +76,7 @@
   box-shadow: var(--shadow-color);          
 }
 .desc_contact form label textarea {
-  min-height: 100px;
+  min-height: 150px;
 }
 
 .desc_contact input[type='submit']:hover {
@@ -95,6 +95,7 @@
   margin: 20px 0;
   width: 100%;
   text-align: center;
+  transition: .5s;
 }
 
 @media (max-width:900px) {

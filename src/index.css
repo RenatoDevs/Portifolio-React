@@ -14,9 +14,16 @@
     inset -4px -4px 4px rgba(255, 255, 255, 0.5),
     4px 4px 4px rgba(0, 0, 0, 0.1),
     -4px -4px 4px rgba(255, 255, 255, 0.3);
-    transition: .5s ease-in-out
-  ;
-  --red-gradiente:linear-gradient(220deg, rgba(140, 3, 3, 0.8) 50%, rgba(90, 0, 0, 0.42) 100%);
-
+  --red-gradiente:linear-gradient(220deg, rgba(205, 0, 0, 0.7) 50%, rgba(147, 0, 0, 0.6) 100%);
   --button-color:#ccc;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  overflow: hidden;
+  transition: .3s;
 }

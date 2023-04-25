@@ -6,7 +6,6 @@
     min-height: 100vh;
     width: 100%;
     position: relative;
-    transition:.8s;
 }
 
 /* .model-section-container:nth-child(odd){

@@ -1,27 +1,55 @@
 import React, { useState, useEffect } from 'react'
 import ModelSection from '../ModelSection/ModelSection';
-import styles from '../Loader/Loader.module.css'
-import gifTeste from '../../assets/gifs/glow.gif'
+import '../Loader/Loader.css'
+import light_gif from '../../assets/gifs/light.gif'
+import dark_gif from '../../assets/gifs/dark.gif'
 
-const Loader = (props) => {
+const Loader = ({children}) => {
+    
+    let getGifTheme = localStorage.getItem('theme')
+
+    let convert = true;
+  if (getGifTheme === 'true' && '') {
+    convert = true
+  } else if(getGifTheme === 'false') {
+    convert = false
+  }
+
     const [loading, setLoading] = useState(true);
+    const [theme, setTheme] = useState(convert);
 
+    useEffect(()=>{
+        console.log('mudou')
+    },[getGifTheme])
+    
+    
     useEffect(() => {
+        setTheme(convert)
+        console.log(convert)
         setTimeout(() => {
             setLoading(false)
         }, 1000)
-    }, [])
+    }, [loading])
+
+
     return (
         <ModelSection>
             {
                 loading ?
-                <div className={styles.loader}>
-                    <div className={styles.block_animation}></div>
-                </div>
-                :
-                <ModelSection>
-                    {props.children}
-                </ModelSection>
+                    <div className='loader'>
+                        {
+                            theme
+                                ?
+                                <img src={light_gif} alt="gif" />
+                                :
+
+                                <img src={dark_gif} alt="gif" />
+                        }
+                    </div>
+                    :
+                    <ModelSection>
+                        {children}
+                    </ModelSection>
             }
         </ModelSection>
     )
