@@ -10,20 +10,11 @@
   --dark-color: #333;
   --light-text-color: #333;
   --dark-text-color: #f3f3f3;
-  --shadow-color: inset 4px 4px 4px rgba(0, 0, 0, 0.05),
-    inset -4px -4px 4px rgba(255, 255, 255, 0.5),
-    4px 4px 4px rgba(0, 0, 0, 0.1),
-    -4px -4px 4px rgba(255, 255, 255, 0.3);
+  --shadow-color: inset 3px 3px 3px rgba(0, 0, 0, 0.05),
+    inset -3px -3px 3px rgba(255, 255, 255, 0.5),
+    3px 3px 3px rgba(0, 0, 0, 0.1),
+    -3px -3px 3px rgba(255, 255, 255, 0.3);
   --red-gradiente:linear-gradient(220deg, rgba(205, 0, 0, 0.7) 50%, rgba(147, 0, 0, 0.6) 100%);
   --button-color:#ccc;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  overflow: hidden;
-  transition: .3s;
-}

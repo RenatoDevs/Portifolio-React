@@ -6,7 +6,6 @@ const ProjectData = [
     img: 'mini-blog',
     title: 'Mini Blog',
     description: 'Esse projeto foi proposto e desenvolvido durante o curso de React js do Hora de Codar e ministrado pelo professor Matheus Batisti. Neste projeto criamos as funções base de um blog, onde no mesmo é possível que que o usuário faça seu cadastro, login, a inserção e ou a exclusão de imagens. Onde pude me aprofundar mais no uso de componentes, hooks e passagens de parâmetros, além de ter uma introdução ao Firebase que ficou responsável pelo armazenamento dos dados das postagens e dos usuários. ',
-    // link: 'dsmovie',
     tec: ['react', 'firebase', 'css'],
     linkPage: '',
     linkRepo: ''
@@ -17,10 +16,9 @@ const ProjectData = [
     img: 'dsmovie',
     title: 'DSMovie',
     description: 'Esse Projeto foi desenvolvido durante a semana Spring React, edição 6.0, ministrado pelo Excelente Professor Nelio Muniz Mendes Alves, onde criamos uma aplicação web usando Java com Spring Boot no back end, TypeScript com ReactJS no front end. O Objetivo principal do projeto foi o uso de componentes, hooks, passagens de parâmetros,  e a integração com o back end. ',
-    // link: 'dsmovie',
     tec: ['React', 'Node', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://rsmovie.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/dsmovie'
   },
   {
     id: 2,
@@ -28,7 +26,6 @@ const ProjectData = [
     img: 'secret-word',
     title: 'Secret Word',
     description: 'O secretWord é uma aplicação web, onde por dicas temos como objetivo adivinhar as letras ocultas para a formação de palavras, conforme as dicas. Fiz algumas modificações no layout e adição de um teclado virtual. Esse projeto foi proposto e desenvolvido durante o curso de React js do Hora de Codar e ministrado pelo professor Matheus Batisti. ',
-    // link: 'barberShop',
     tec: ['javascript', 'html', 'css'],
     linkPage: '',
     linkRepo: ''
@@ -39,10 +36,9 @@ const ProjectData = [
     img: 'studio-moveis-vendas',
     title: 'StudioMoveis Store',
     description: 'Este projeto eu desenvolvi para simular uma loja virtual, apenas no layout, para treinar HTML e CSS como responsividade e posicionamentos, além de um pouco de Javascript no menu e nos slides. ',
-    // link: 'studioMoveisStore',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://studiomoveisvenda.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/StudioMoveisVenda'
   },
   {
     id: 4,
@@ -50,10 +46,9 @@ const ProjectData = [
     img: 'conversor-moedas',
     title: 'Conversor de Moedas',
     description: 'Este Projeto eu desenvolvi para fazer a conversão entre moedas de várias nacionalidades, onde pude pôr em prática o JavaScript no uso de funções, passagem de parâmetros, e a base de cálculos, e o CSS como responsividade, e os componentes da página que estilizei. ',
-    // link: 'studioMoveisPlan',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://currency-converter-2rs.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/currency-converter-2'
   },
   {
     id: 5,
@@ -61,10 +56,9 @@ const ProjectData = [
     img: 'studio-moveis-plan',
     title: 'StudioMoveis',
     description: 'Este projeto eu desenvolvi como uma página de uma empresa de moveis planejados para treinar HTML e CSS como responsividade e posicionamentos, Javascript no menu. ',
-    // link: 'studioMoveisPlan',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://studiomoveis.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/StudioMoveis'
   },
   {
     id: 6,
@@ -72,8 +66,9 @@ const ProjectData = [
     img: 'coca-cola',
     title: 'Coca Cola',
     description: 'Esse projeto eu desenvolvi, com base em uma video aula do youtbe, para treinar html e css, onde apesar de simples achei muito interessante o resultado final. ',
-    // link: 'cocaCola',
     tec: ['javascript', 'html', 'css'],
+    linkPage: 'https://ccola.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/coca-cola'
   },
   {
     id: 7,
@@ -81,10 +76,9 @@ const ProjectData = [
     img: 'churrascometro',
     title: 'Churrascômetro',
     description: 'O churrascometro foi desenvolvido durante um curso de javascript, html e css, onde podemos fazer um cálculo médio do que será necessário para realizar um churrasco. ',
-    // link: 'churras',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://churrascalc.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/churrascometro'
   },
   {
     id: 8,
@@ -92,8 +86,9 @@ const ProjectData = [
     img: 'cost',
     title: 'Costs',
     description: 'O Cost é uma aplicação web para gerenciamento financeiro, para a contabilização dos recursos para a realização de projetos, este projeto foi desenvolvido durante um curso do Matheus Batisti, para aprendizado e fixação do react. ',
-    // link: 'cocaCola',
     tec: ['React', 'javascript', 'css'],
+    linkPage: '',
+    linkRepo: ''
   },
   {
     id: 9,
@@ -101,10 +96,9 @@ const ProjectData = [
     img: 'barbearia',
     title: 'BarberShop',
     description: 'O BarberShop é uma página de uma barbearia, onde mostramos os serviçoes disponiveis e os horarios de funcionamento.  ',
-    // link: 'churras',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://barbershoprs.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/BarberShop'
   },
   {
     id: 10,
@@ -112,10 +106,9 @@ const ProjectData = [
     img: 'academia',
     title: 'TopGym',
     description: 'Este projeto é uma página de uma academia, onde podemos consultar os serviços e valores da mesma, calcular o seu imc, consultar localidade das unidades. ',
-    // link: 'churras',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://topgymrs.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/TopGym_academia'
   },
   {
     id: 11,
@@ -123,7 +116,6 @@ const ProjectData = [
     img: 'calculadora',
     title: 'Calculadora',
     description: 'Este projeto é uma página de uma academia, onde podemos consultar os serviços e valores da mesma, calcular o seu imc, consultar localidade das unidades. ',
-    // link: 'churras',
     tec: ['javascript', 'html', 'css'],
     linkPage: '',
     linkRepo: ''
@@ -134,7 +126,7 @@ const ProjectData = [
     img: 'snake',
     title: 'Snake',
     description: 'Este projeto foi desenvolvido durante modulo de javascript, html e css, onde utilizamos o canvas para a projeção da cobra e o javascripit para realizar o game de fato. ',
-    // link: 'churras',
+    
     tec: ['javascript', 'html', 'css'],
     linkPage: '',
     linkRepo: ''
@@ -145,9 +137,9 @@ const ProjectData = [
     img: 'jogo-da-memoria',
     title: 'Jogo da Memoria',
     description: '',
-    // link: 'churras',
+    
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
+    linkPage: 'https://jgmemoria.netlify.app/',
     linkRepo: ''
   },
   {
@@ -156,10 +148,10 @@ const ProjectData = [
     img: 'jogo-da-velha',
     title: 'Jogo da Velha',
     description: '',
-    // link: 'churras',
+    
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://gamevelha.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/Jogo-da-velha'
   },
   {
     id: 15,
@@ -167,7 +159,7 @@ const ProjectData = [
     img: 'login',
     title: 'Pagina de login',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis beatae impedit rerum libero. Velit corporis ea deserunt? Reprehenderit et ipsam unde aliquid voluptates soluta, quibusdam tenetur voluptas ullam iusto blanditiis!',
-    // link: 'churras',
+    
     tec: ['javascript', 'html', 'css'],
     linkPage: '',
     linkRepo: ''
@@ -178,10 +170,9 @@ const ProjectData = [
     img: 'pedra-papel-tesoura',
     title: 'Pagina de login',
     description: '',
-    // link: 'churras',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://gamejokenpo.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/Jokenpo'
   },
   {
     id: 17,
@@ -189,10 +180,9 @@ const ProjectData = [
     img: 'portifolio-html',
     title: 'Portifólio HTML',
     description: '',
-    // link: 'churras',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://renatosantoshtml.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/Portifolio'
   },
   {
     id: 17,
@@ -200,10 +190,9 @@ const ProjectData = [
     img: 'quiz',
     title: 'Quiz',
     description: '',
-    // link: 'churras',
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://quizonreact.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/quizbasic'
   },
 ]
 
