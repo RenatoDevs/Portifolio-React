@@ -33,7 +33,7 @@ const Loader = ({children}) => {
 
 
     return (
-        <ModelSection>
+        <ModelSection customClass='flex-start'>
             {
                 loading ?
                     <div className='loader'>
@@ -47,7 +47,7 @@ const Loader = ({children}) => {
                         }
                     </div>
                     :
-                    <ModelSection>
+                    <ModelSection customClass='flex-start'>
                         {children}
                     </ModelSection>
             }

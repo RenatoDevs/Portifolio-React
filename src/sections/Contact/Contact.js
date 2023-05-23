@@ -1,14 +1,26 @@
 import React, { useState } from 'react'
 import Loader from '../../components/Loader/Loader';
 import ModelSection from '../../components/ModelSection/ModelSection'
-import SocialButtonsPlus from '../../components/SocialButtonsPlus/SocialButtonsPlus';
 import Title from '../../components/Title/TitlePage';
 import styles from "./Contact.module.css"
+import { IoDocumentText, IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5';
+import CvModelo from '../../assets/img/cv modelo.png'
+import Cv from '../../components/Cv/Cv'
 
 const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [assunto, setAssunto] = useState('');
   const [message, setMessage] = useState('');
+
+  const [showTheCv, setShowTheCv] = useState(false);
+
+  const toggleCv = () => {
+    setShowTheCv(!showTheCv);
+    console.log(showTheCv)
+    console.log('clicou')
+  }
+
   return (
     <Loader>
       <ModelSection>
@@ -39,8 +51,8 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Digite o assunto"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
+                  onChange={(e) => setAssunto(e.target.value)}
+                  value={assunto}
                 />
               </label>
               <label>
@@ -53,9 +65,42 @@ const Contact = () => {
               <input type="submit" value="Enviar Mensagem" />
             </form>
           </div>
-
           <div className={styles.contact_container}>
-            <SocialButtonsPlus />
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/renato-santos-693568127/"><IoLogoLinkedin />
+                </a>
+                Linkedin
+              </li>
+              <li>
+                <a href="https://github.com/RenatoDevs"><IoLogoGithub />
+                </a>
+                RenatoDevs
+              </li>
+              <li>
+                <a href="#"><IoMail />
+                </a>
+                santos.renato@hotmail.com
+              </li>
+              <li onClick={toggleCv}>
+                <a href="#"><IoDocumentText />
+                </a>
+                Curriculo
+              </li>
+            </ul>
+
+          </div>
+          <div className={`${styles.modal} ${showTheCv ? styles.show : ''}`} onClick={toggleCv}>
+            <div className={styles.boxCv} onClick={(e) => e.stopPropagation()}>
+              <button className={styles.closeBt} onClick={toggleCv}>X</button>
+              <div className={styles.cv}>
+                <img src={CvModelo} alt="" />
+                {/* <Cv/> */}
+              </div>
+              <div className={styles.cvButtons}>
+                <button>Download</button>
+              </div>
+            </div>
           </div>
         </div>
       </ModelSection>

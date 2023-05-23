@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import ProjectData from '../../data/ProjectData';
-import ModelSection from '../../components/ModelSection/ModelSection'
 import Bubble from '../../components/Bubble/Bubble';
 import styles from './ProjectPage.module.css'
 // import { AnimatePresence, motion } from 'framer-motion';
@@ -19,9 +18,7 @@ const ProjectPage = () => {
         </div>
         <div className={styles.project}>
           <div className={styles.box_image}>
-            <div className={styles.case_pc}>
               <img src={`../../public-images/capas/${data.img}.png`} alt="" />
-            </div>
           </div>
 
           <div className={styles.box_description}>
@@ -40,15 +37,12 @@ const ProjectPage = () => {
                 ))}
               </div>
               <div className={styles.view_button}>
-                <a href='https://www.google.com.br/' target="_blank" rel='noreferrer'>Ver Pagina</a>
-                <a href='https://www.google.com.br/' target="_blank" rel='noreferrer'>GitHub</a>
+                <a href={data.linkPage} target="_blank" rel='noreferrer'>Ver Pagina</a>
+                <a href={data.linkRepo} target="_blank" rel='noreferrer'>GitHub</a>
               </div>
             </div>
-
-
           </div>
         </div>
-
       </div>
     </Loader>
 

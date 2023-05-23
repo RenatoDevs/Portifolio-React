@@ -13,9 +13,9 @@ const Home = () => {
                     <SocialButtons customClass='column' />
                 </div>
                 <div className={styles.box_image} >
-                    <div className={styles.image}>
+                    {/* <div className={styles.image}>
                         <img src={foto} alt='#'></img>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={styles.box_name}>
                     <div data-text="Hi i'm" className={styles.first_name}>

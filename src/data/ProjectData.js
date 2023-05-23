@@ -1,17 +1,17 @@
 
 const ProjectData = [
+  // {
+  //   
+  //   category: 'React',
+  //   img: 'mini-blog',
+  //   title: 'Mini Blog',
+  //   description: 'Esse projeto foi proposto e desenvolvido durante o curso de React js do Hora de Codar e ministrado pelo professor Matheus Batisti. Neste projeto criamos as funções base de um blog, onde no mesmo é possível que que o usuário faça seu cadastro, login, a inserção e ou a exclusão de imagens. Onde pude me aprofundar mais no uso de componentes, hooks e passagens de parâmetros, além de ter uma introdução ao Firebase que ficou responsável pelo armazenamento dos dados das postagens e dos usuários. ',
+  //   tec: ['react', 'firebase', 'css'],
+  //   linkPage: '',
+  //   linkRepo: ''
+  // },
   {
-    id: 0,
-    category: 'React',
-    img: 'mini-blog',
-    title: 'Mini Blog',
-    description: 'Esse projeto foi proposto e desenvolvido durante o curso de React js do Hora de Codar e ministrado pelo professor Matheus Batisti. Neste projeto criamos as funções base de um blog, onde no mesmo é possível que que o usuário faça seu cadastro, login, a inserção e ou a exclusão de imagens. Onde pude me aprofundar mais no uso de componentes, hooks e passagens de parâmetros, além de ter uma introdução ao Firebase que ficou responsável pelo armazenamento dos dados das postagens e dos usuários. ',
-    tec: ['react', 'firebase', 'css'],
-    linkPage: '',
-    linkRepo: ''
-  },
-  {
-    id: 1,
+    
     category: 'React',
     img: 'dsmovie',
     title: 'DSMovie',
@@ -21,7 +21,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/dsmovie'
   },
   {
-    id: 2,
+    
     category: 'React',
     img: 'secret-word',
     title: 'Secret Word',
@@ -31,7 +31,7 @@ const ProjectData = [
     linkRepo: ''
   },
   {
-    id: 3,
+    
     category: 'HTML',
     img: 'studio-moveis-vendas',
     title: 'StudioMoveis Store',
@@ -41,7 +41,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/StudioMoveisVenda'
   },
   {
-    id: 4,
+    
     category: 'JavaScript',
     img: 'conversor-moedas',
     title: 'Conversor de Moedas',
@@ -51,7 +51,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/currency-converter-2'
   },
   {
-    id: 5,
+    
     category: 'HTML',
     img: 'studio-moveis-plan',
     title: 'StudioMoveis',
@@ -61,7 +61,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/StudioMoveis'
   },
   {
-    id: 6,
+    
     category: 'JavaScript',
     img: 'coca-cola',
     title: 'Coca Cola',
@@ -71,7 +71,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/coca-cola'
   },
   {
-    id: 7,
+    
     category: 'JavaScript',
     img: 'churrascometro',
     title: 'Churrascômetro',
@@ -80,18 +80,18 @@ const ProjectData = [
     linkPage: 'https://churrascalc.netlify.app/',
     linkRepo: 'https://github.com/RenatoDevs/churrascometro'
   },
+  // {
+  //   
+  //   category: 'React',
+  //   img: 'cost',
+  //   title: 'Costs',
+  //   description: 'O Cost é uma aplicação web para gerenciamento financeiro, para a contabilização dos recursos para a realização de projetos, este projeto foi desenvolvido durante um curso do Matheus Batisti, para aprendizado e fixação do react. ',
+  //   tec: ['React', 'javascript', 'css'],
+  //   linkPage: '',
+  //   linkRepo: ''
+  // },
   {
-    id: 8,
-    category: 'React',
-    img: 'cost',
-    title: 'Costs',
-    description: 'O Cost é uma aplicação web para gerenciamento financeiro, para a contabilização dos recursos para a realização de projetos, este projeto foi desenvolvido durante um curso do Matheus Batisti, para aprendizado e fixação do react. ',
-    tec: ['React', 'javascript', 'css'],
-    linkPage: '',
-    linkRepo: ''
-  },
-  {
-    id: 9,
+    
     category: 'HTML',
     img: 'barbearia',
     title: 'BarberShop',
@@ -101,7 +101,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/BarberShop'
   },
   {
-    id: 10,
+    
     category: 'JavaScript',
     img: 'academia',
     title: 'TopGym',
@@ -110,29 +110,29 @@ const ProjectData = [
     linkPage: 'https://topgymrs.netlify.app/',
     linkRepo: 'https://github.com/RenatoDevs/TopGym_academia'
   },
+  // {
+  //   
+  //   category: 'JavaScript',
+  //   img: 'calculadora',
+  //   title: 'Calculadora',
+  //   description: 'Este projeto é uma página de uma academia, onde podemos consultar os serviços e valores da mesma, calcular o seu imc, consultar localidade das unidades. ',
+  //   tec: ['javascript', 'html', 'css'],
+  //   linkPage: '',
+  //   linkRepo: ''
+  // },
   {
-    id: 11,
-    category: 'JavaScript',
-    img: 'calculadora',
-    title: 'Calculadora',
-    description: 'Este projeto é uma página de uma academia, onde podemos consultar os serviços e valores da mesma, calcular o seu imc, consultar localidade das unidades. ',
-    tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
-  },
-  {
-    id: 12,
+    
     category: 'JavaScript',
     img: 'snake',
     title: 'Snake',
     description: 'Este projeto foi desenvolvido durante modulo de javascript, html e css, onde utilizamos o canvas para a projeção da cobra e o javascripit para realizar o game de fato. ',
     
     tec: ['javascript', 'html', 'css'],
-    linkPage: '',
-    linkRepo: ''
+    linkPage: 'https://snake-js-renato.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/snake-Js'
   },
   {
-    id: 13,
+    
     category: 'JavaScript',
     img: 'jogo-da-memoria',
     title: 'Jogo da Memoria',
@@ -143,7 +143,7 @@ const ProjectData = [
     linkRepo: ''
   },
   {
-    id: 14,
+    
     category: 'JavaScript',
     img: 'jogo-da-velha',
     title: 'Jogo da Velha',
@@ -154,7 +154,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/Jogo-da-velha'
   },
   {
-    id: 15,
+    
     category: 'JavaScript',
     img: 'login',
     title: 'Pagina de login',
@@ -165,7 +165,7 @@ const ProjectData = [
     linkRepo: ''
   },
   {
-    id: 16,
+    
     category: 'JavaScript',
     img: 'pedra-papel-tesoura',
     title: 'Pagina de login',
@@ -175,7 +175,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/Jokenpo'
   },
   {
-    id: 17,
+    
     category: 'JavaScript',
     img: 'portifolio-html',
     title: 'Portifólio HTML',
@@ -185,7 +185,7 @@ const ProjectData = [
     linkRepo: 'https://github.com/RenatoDevs/Portifolio'
   },
   {
-    id: 17,
+    
     category: 'React',
     img: 'quiz',
     title: 'Quiz',

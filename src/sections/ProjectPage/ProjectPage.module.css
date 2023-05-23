@@ -10,7 +10,10 @@
     justify-content: center;
     align-items: center;
 }
-
+.project_container{
+    width: 100%;
+    min-height: 100vh;
+}
 .project_title {
     width: 100%;
     padding: 10px;
@@ -32,24 +35,17 @@
     grid-template-columns: 3fr 1fr;
     position: relative;
     width: 100%;
-    max-width: 2300px;
     align-items: stretch;
     padding:10px;
-    min-height: 70vh;
     gap: 10px;
 }
 .box_image {
     width: 100%;
 }
-
-.box_image .case_pc {
-    width: 100%;
-    flex: 1 1 450px;
-}
-
 .box_image img {
     height: 100%;
     width: 100%;
+    max-width: 1600px;
     box-shadow: 0 0 20px black;
 }
 

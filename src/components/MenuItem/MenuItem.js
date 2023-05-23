@@ -23,7 +23,7 @@ const MenuItem = ({ menuItem }) => {
                                         </Bubble>
                                     ))}
                                 </div>
-                                <Link className={styles.button} to={`project/${item.id}`}>Detalhes</Link>
+                                <Link className={styles.button} to={`project/${i}`}>Detalhes</Link>
                             </div>
                         </div>
                     )

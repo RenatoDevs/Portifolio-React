@@ -13,7 +13,7 @@
     bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 100;
+    z-index: 2;
 }
 .nav .navigation {
     position: absolute;

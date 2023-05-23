@@ -2,7 +2,13 @@
 .desc_contact,
 .contact_container form,
 .contact_container form label,
-.box_title {
+.box_title,
+.contact_container ul,
+.contact_container ul li,
+.contact_container ul li a,
+.boxCv,
+.modal,
+.closeBt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +26,8 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 2fr 1fr;
-   ;
+  z-index: 1;
+  position: relative;
 }
 
 .contact_container {
@@ -50,16 +57,16 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  max-width: 700px;
+  max-width: 1000px;
 }
 
 .desc_contact form label {
   flex-direction: column;
   font-size: 1.2em;
-  gap: 5px;
+  gap: 10px;
   width: 100%;
   font-weight: 500;
-  
+
 }
 
 .desc_contact form label input,
@@ -72,22 +79,26 @@
   border-radius: 5px;
   background-color: transparent;
   margin-bottom: 20px;
-  padding: 10px;
-  box-shadow: var(--shadow-color);          
+  padding: 12px;
+  box-shadow: var(--shadow-color);
+  
 }
+
 .desc_contact form label textarea {
   min-height: 150px;
+}
+.desc_contact input[type='submit'] {
+  cursor: pointer;
+  font-weight: bold;
+  transition: .5s;
 }
 
 .desc_contact input[type='submit']:hover {
   background: var(--red-gradiente);
   cursor: pointer;
-  
+
 }
-.desc_contact input[type='submit']{
-  cursor: pointer;
-  font-weight: bold;
-}
+
 
 .desc_contact p {
   font-size: 1.5em;
@@ -96,6 +107,56 @@
   width: 100%;
   text-align: center;
   transition: .5s;
+}
+
+
+
+.contact_container ul {
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+  min-height: 350px;
+  gap: 10px;
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.contact_container ul li {
+  background-color: rgb(43, 43, 43);
+  border-radius: 50px 0 0 50px;
+  width: 90%;
+  height: 90px;
+  justify-content: flex-start;
+  padding: 12px;
+  transition: .5s;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  gap: 10px;
+}
+
+.contact_container ul li a {
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--button-color);
+  font-size: 45px;
+  transition: .7s;
+}
+
+.contact_container ul li a {
+  color: rgb(66, 66, 66);
+  cursor: pointer;
+}
+
+.contact_container ul li:hover {
+
+  transform: scale(1.1);
+}
+
+.contact_container ul li:hover a {
+  background-color: rgb(255, 255, 255);
 }
 
 @media (max-width:900px) {
@@ -110,4 +171,93 @@
     padding: 50px 0 30px 0;
     z-index: 1;
   }
+}
+
+
+.modal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.752);
+  transition: .5s;
+  display: none;
+}
+
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.boxCv {
+  max-width: 100%;
+  max-height: 85%;
+  padding: 15px;
+  background-color: #585858;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+}
+
+.closeBt {
+  border: none;
+  background-color: #aaa;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(203, 69, 69);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 0 10px black;
+}
+
+.closeBt:hover {
+  background-color: rgb(231, 16, 16);
+  border-radius: 50%;
+}
+
+.cv {
+  background-color: rgb(111, 111, 111);
+  width: 100%;
+  overflow-y: scroll;
+  box-shadow: 0 0 10px black;
+}
+
+
+
+.cv img{
+  max-width: 100%;
+  object-fit:contain;
+}
+
+.cvButtons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.cvButtons button {
+  border: none;
+  width: 150px;
+  background-color: rgb(35, 35, 35);
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 0 10px black;
+}
+
+.cvButtons button:hover {
+  background-color: rgb(242, 242, 242);
+  color: black;
 }
