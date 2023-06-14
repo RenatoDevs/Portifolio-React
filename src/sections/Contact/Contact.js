@@ -4,8 +4,7 @@ import ModelSection from '../../components/ModelSection/ModelSection'
 import Title from '../../components/Title/TitlePage';
 import styles from "./Contact.module.css"
 import { IoDocumentText, IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5';
-import CvModelo from '../../assets/img/cv modelo.png'
-import Cv from '../../components/Cv/Cv'
+import CvModelo from '../../assets/img/RENATO DOS SANTOS - DEV FRONT END.png'
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -78,7 +77,7 @@ const Contact = () => {
                 RenatoDevs
               </li>
               <li>
-                <a href="#"><IoMail />
+                <a href="santos.renato@hotmail.com"><IoMail />
                 </a>
                 santos.renato@hotmail.com
               </li>

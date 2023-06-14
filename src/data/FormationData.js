@@ -11,11 +11,6 @@ const FormationData = [
       college:'Programador BR'
     },
     {
-      date:'Fev 2022 - 26 horas',
-      name:'JavaScript 1',
-      college:'Alura'
-    },
-    {
       date:'Jun 2022 - 26 horas',
       name:'React JS do zero a maestria',
       college:'Udemy'

@@ -26,7 +26,7 @@ const ProjectData = [
     img: 'secret-word',
     title: 'Secret Word',
     description: 'O secretWord é uma aplicação web, onde por dicas temos como objetivo adivinhar as letras ocultas para a formação de palavras, conforme as dicas. Fiz algumas modificações no layout e adição de um teclado virtual. Esse projeto foi proposto e desenvolvido durante o curso de React js do Hora de Codar e ministrado pelo professor Matheus Batisti. ',
-    tec: ['javascript', 'html', 'css'],
+    tec: ['React', 'javascript', 'css'],
     linkPage: '',
     linkRepo: ''
   },
@@ -190,7 +190,7 @@ const ProjectData = [
     img: 'quiz',
     title: 'Quiz',
     description: '',
-    tec: ['javascript', 'html', 'css'],
+    tec: ['React', 'javascript', 'css'],
     linkPage: 'https://quizonreact.netlify.app/',
     linkRepo: 'https://github.com/RenatoDevs/quizbasic'
   },
