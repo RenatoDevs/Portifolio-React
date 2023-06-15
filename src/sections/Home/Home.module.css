@@ -40,7 +40,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-30%, -65%);
+    transform: translate(-30%, -55%);
     z-index: 0;
 }
 
@@ -52,7 +52,7 @@
     padding: 0 0 0 20px;
     flex-wrap: wrap;
     position: absolute;
-    bottom: 160px;
+    bottom: 190px;
     z-index: 1;
     font-weight: 800;
 }
@@ -109,6 +109,9 @@
 }
 
 @media (max-width:800px) {
+    .box_name {
+        bottom: 130px;
+    }
     .box_name span {
         font-size: 90px;
         line-height: 60px;

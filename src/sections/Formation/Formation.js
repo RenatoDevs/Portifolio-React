@@ -5,8 +5,8 @@ import './Formation.css'
 import FormationData from '../../data/FormationData'
 
 import { IconName, IoSchool } from "react-icons/io5";
-import ModelSection from '../../components/ModelSection/ModelSection'
-import Loader from '../../components/Loader/Loader'
+import ModelSection from '../../components/ModelSection/ModelSection';
+import Loader from '../../components/Loader/Loader';
 
 const Formation = () => {
 

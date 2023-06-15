@@ -17,7 +17,7 @@
 }
 .nav .navigation {
     position: absolute;
-    width: 350px;
+    width: 300px;
     height: 50px;
     bottom: 1%;
     transition: .5s;
@@ -25,7 +25,7 @@
 .nav .navigation::after{
     content: '';
     top: -10px;
-    width: 350px;
+    width: 300px;
     height: 60px;
     border-radius: 30px;
     position: absolute;

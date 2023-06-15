@@ -4,24 +4,27 @@ import ModelSection from '../../components/ModelSection/ModelSection';
 import styles from './Skills.module.css';
 import TechsData from '../../data/TechsData';
 import TitleShadow from '../../components/TitleShadow/TitleShadow';
-import { IoPeopleOutline } from 'react-icons/io5';
+import { IoPeopleOutline, IconName, IoSchool } from 'react-icons/io5';
 import { motion } from "framer-motion";
 import Loader from '../../components/Loader/Loader';
+
+import BoxGlass from '../../components/BoxGlass/BoxGlass'
+import Title from '../../components/Title/TitlePage'
+import FormationData from '../../data/FormationData';
+
+
 
 
 const Skills = () => {
 
   const [techsItem] = useState(TechsData);
-
-
-
-
+  const [formationItem, setFormationItme] = useState(FormationData);
   return (
     <Loader>
       <ModelSection customClass='column'>
         <div className={styles.grid_skills}>
           <div className={styles.soft_skills}>
-            <TitleShadow title='Soft Skills' />
+            <TitleShadow customClass='titleShadowLight' title='Soft Skills' />
             <div className={styles.grid_soft_skills}>
               <ul>
                 {['Pensamento Crítico',
@@ -42,8 +45,10 @@ const Skills = () => {
               </ul>
             </div>
           </div>
-          <div className={styles.hard_skills}>
-            <TitleShadow customClass='titleShadowRight' title='Hard Skills' />
+
+
+          {/* <div className={styles.hard_skills}>
+            <TitleShadow customClass='titleShadowlight' title='Hard Skills' />
             <div className={styles.grid_cards_hard_skills}>
               {
                 techsItem.map((item, i) => (
@@ -61,18 +66,48 @@ const Skills = () => {
                         <img src={`../public-images/techs/${item.name}.png`} alt="" />
                       </Bubble>
                     </div>
-                    {/* <div className={styles.description_hard_skill}>
-                      <h1>{item.name}</h1>
-                      <ul>
-                        {item.conhecimento.map((item, i) => (
-                          <li key={i}>{item}</li>
-                        ))}
-                      </ul>
-                    </div> */}
                   </motion.div>
                 ))
               }
             </div>
+          </div>*/}
+        </div>
+        <div className={styles.formation_container}>
+          <div className={styles.formation_title}>
+            <Title name='Formation' />
+          </div>
+          <div className={styles.grid_formation}>
+            {
+              formationItem.map((item, i) => {
+                return (
+                  <div className={styles.formation_item} key={i}>
+                    <span className={styles.timeline_formation}>
+                      <span className={styles.timeline_formation_ball}></span>
+                    </span>
+                    <BoxGlass customClass='fullWidth'>
+                      <div className={styles.content}>
+                        <div className={styles.formation_date}>
+                          <p className={styles.formation_icon} src='#' alt='C'>{<IoSchool />}</p>
+                          <p className={styles.formation_date}>{item.date}</p>
+                        </div>
+                        <div className={styles.formation_box_description}>
+                          <div>
+                            {item.tech === "" ? <Bubble customClass="none"></Bubble> : <Bubble customClass='medium' >
+                              <img src={`../public-images/techs/${item.tech}.png`} alt="" />
+                            </Bubble>}
+                          </div>
+                          <div className={styles.formation_description}>
+                            <p className={styles.formation_name}>{item.name}</p>
+                            <p className={styles.formation_college}>{item.college}</p>
+                          </div>
+                        </div>
+                            <button className={styles.bt_cert}>Ver Certificado</button>
+                      </div>
+                    </BoxGlass>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </ModelSection >
