@@ -4,7 +4,8 @@ import ModelSection from '../../components/ModelSection/ModelSection'
 import Title from '../../components/Title/TitlePage';
 import styles from "./Contact.module.css"
 import { IoDocumentText, IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5';
-import CvModelo from '../../assets/img/RENATO DOS SANTOS - DEV FRONT END.png'
+import CvModelo from '../../assets/img/RENATO DOS SANTOS - DEV FRONT END.png';
+import Modal from '../../components/Modal/Modal';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -12,12 +13,10 @@ const Contact = () => {
   const [assunto, setAssunto] = useState('');
   const [message, setMessage] = useState('');
 
-  const [showTheCv, setShowTheCv] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const toggleCv = () => {
-    setShowTheCv(!showTheCv);
-    console.log(showTheCv)
-    console.log('clicou')
+  const toggleModal = () => {
+    setShowModal(!showModal);
   }
 
   return (
@@ -81,26 +80,16 @@ const Contact = () => {
                 </a>
                 santos.renato@hotmail.com
               </li>
-              <li onClick={toggleCv}>
+              <li onClick={toggleModal}>
                 <a href="#"><IoDocumentText />
                 </a>
                 Curriculo
               </li>
             </ul>
-
           </div>
-          <div className={`${styles.modal} ${showTheCv ? styles.show : ''}`} onClick={toggleCv}>
-            <div className={styles.boxCv} onClick={(e) => e.stopPropagation()}>
-              <button className={styles.closeBt} onClick={toggleCv}>X</button>
-              <div className={styles.cv}>
-                <img src={CvModelo} alt="" />
-                {/* <Cv/> */}
-              </div>
-              <div className={styles.cvButtons}>
-                <button>Download</button>
-              </div>
-            </div>
-          </div>
+          <Modal download={true} showModal={showModal} toggleModal={toggleModal}>
+            <img src={CvModelo} alt="Curriculo" />
+          </Modal>
         </div>
       </ModelSection>
     </Loader>

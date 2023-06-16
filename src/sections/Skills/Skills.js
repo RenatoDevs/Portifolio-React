@@ -11,14 +11,21 @@ import Loader from '../../components/Loader/Loader';
 import BoxGlass from '../../components/BoxGlass/BoxGlass'
 import Title from '../../components/Title/TitlePage'
 import FormationData from '../../data/FormationData';
-
-
-
+import Modal from '../../components/Modal/Modal';
 
 const Skills = () => {
 
   const [techsItem] = useState(TechsData);
   const [formationItem, setFormationItme] = useState(FormationData);
+
+  const [showModal, setShowModal] = useState(false);
+  const [cert, setCert] = useState('')
+
+  const toggleModal = (item) => {
+    setShowModal(!showModal);
+    setCert(item);
+    console.log(item)
+  }
   return (
     <Loader>
       <ModelSection customClass='column'>
@@ -40,7 +47,8 @@ const Skills = () => {
                         stiffness: 260,
                         damping: 20
                       }}
-                    >{item}</motion.li>
+                    >
+                    <img src={`../public-images/logos/${item}.png`} alt="" /></motion.li>
                   ))}
               </ul>
             </div>
@@ -101,14 +109,18 @@ const Skills = () => {
                             <p className={styles.formation_college}>{item.college}</p>
                           </div>
                         </div>
-                            <button className={styles.bt_cert}>Ver Certificado</button>
-                      </div>
+                        {item.certificate === "" ? '' : <button onClick={()=>toggleModal(item.certificate)} className={styles.bt_cert}>Ver Certificado</button>}
+
+                      </div>                  
                     </BoxGlass>
                   </div>
                 )
               })
             }
           </div>
+          <Modal showModal={showModal} toggleModal={toggleModal} download={false}>
+            <img src={`../public-images/certificados/${cert}.png`} alt={cert} />
+          </Modal>
         </div>
       </ModelSection >
     </Loader>

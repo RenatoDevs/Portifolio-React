@@ -25,8 +25,6 @@ function App() {
     }, 3000)
   }, []);
 
-  
- 
   return (
     <Container customClass='column'>
       <BrowserRouter>

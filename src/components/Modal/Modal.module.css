@@ -1,0 +1,94 @@
+.boxModal,
+.modal,
+.closeBt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .5s;
+    display: none;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxModal {
+    max-width: 1300px;
+    max-height: 85%;
+    padding: 15px;
+    background-color: #585858;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+}
+
+.closeBt {
+    border: none;
+    background-color: #aaa;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(203, 69, 69);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 10px black;
+}
+
+.closeBt:hover {
+    background-color: rgb(231, 16, 16);
+    border-radius: 50%;
+}
+
+.content {
+    background-color: rgb(111, 111, 111);
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px black;
+}
+
+.content img {
+    max-width: 100%;
+
+    object-fit: contain;
+}
+
+.modalButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.modalButton button {
+    border: none;
+    width: 150px;
+    background-color: rgb(35, 35, 35);
+    padding: 10px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 10px black;
+}
+
+.modalButton button:hover {
+    background-color: rgb(242, 242, 242);
+    color: black;
+}

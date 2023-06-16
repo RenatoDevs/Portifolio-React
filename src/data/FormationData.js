@@ -5,70 +5,84 @@ const FormationData = [
       name:'Analise e Desenvolvimento de Sistemas',
       tech:'',
       college:'Univesidade Nove de Julho',
-      certificate:'breve'
+      certificate:''
     },
     {
       date:'Nov 2021 - 26 horas',
       name:'HTML',
       tech:'HTML',
       college:'Programador BR',
-      certificate:'breve'
+      certificate:'js-progbr'
     },
     {
       date:'Nov 2021 - 26 horas',
       name:'CSS',
       tech:'CSS',
       college:'Programador BR',
-      certificate:'breve'
+      certificate:'js-progbr'
     },
     {
       date:'Nov 2021 - 26 horas',
       name:'JAVASCRIPT',
       tech:'JAVASCRIPT',
       college:'Programador BR',
-      certificate:'breve'
+      certificate:'js-progbr'
     },
     {
       date:'Jun 2022 - 26 horas',
       name:'REACT',
       tech:'REACT',
       college:'Udemy - React JS do zero a maestria ',
-      certificate:'breve'
+      certificate:''
     },
     {
       date:'Em Breve',
       name:'GIT',
       tech:'GIT',
-      college:'Udemy - .... ',
-      certificate:'breve'
+      college:'',
+      certificate:''
+    },
+    {
+      date:'Mai 2023 - 20 horas',
+      name:'Lógica de Programação',
+      tech:'logica',
+      college:'SoftBlue',
+      certificate:'logica'
     },
     {
       date:'Em Breve',
-      name:'SASS',
+      name:'SASS / SCSS',
       tech:'SASS',
-      college:'Udemy - ... ',
-      certificate:'breve'
+      college:'Udemy - SASS e SCSS do básico ao avançado',
+      certificate:''
     },
     {
       date:'Em Breve',
-      name:'mysql',
+      name:'SQL / mysql',
       tech:'mysql',
+      college:'Udemy - SQL com MySql',
+      certificate:''
+    },
+    {
+      date:'Em Breve',
+      name:'PHP',
+      tech:'PHP',
       college:'Udemy - .... ',
-      certificate:'breve'
+      certificate:''
     },
     {
       date:'Em Breve',
       name:'ADOBE XD',
       tech:'ADOBE XD',
       college:'Udemy - .... ',
-      certificate:'breve'
+      certificate:''
     },
     {
       date:'Em Breve',
       name:'FIGMA',
       tech:'FIGMA',
       college:'Udemy - .... ',
-      certificate:'breve'
+      certificate:''
     },
   ]
   
