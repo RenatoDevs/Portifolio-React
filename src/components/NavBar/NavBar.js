@@ -24,10 +24,10 @@ const NavBar = ({ toggle }) => {
             </NavLink>
           </li>
 
-          <li className={styles.skills}>
-            <NavLink to='/skills' className={({ isActive }) => (isActive ? styles.active : '')}>
+          <li className={styles.Formation}>
+            <NavLink to='/Formation' className={({ isActive }) => (isActive ? styles.active : '')}>
               <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoSchoolOutline /></Bubble></span>
-              <span className={styles.text}>Skills</span>
+              <span className={styles.text}>Formation</span>
             </NavLink>
           </li>
           {/* <li className={styles.skills}>

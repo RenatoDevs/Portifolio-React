@@ -1,8 +1,7 @@
 .titleShadow{
-    font-size: calc(10px + 15vw);
+    font-size: calc(10px + 11vw);
     line-height: 15vw;
     font-family: 'Poppins', sans-serif;
-    position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;

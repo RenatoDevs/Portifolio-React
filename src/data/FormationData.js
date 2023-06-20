@@ -29,15 +29,15 @@ const FormationData = [
       certificate:'js-progbr'
     },
     {
-      date:'Jun 2022 - 26 horas',
+      date:'Estudando',
       name:'REACT',
       tech:'REACT',
       college:'Udemy - React JS do zero a maestria ',
       certificate:''
     },
     {
-      date:'Em Breve',
-      name:'GIT',
+      date:'',
+      name:'GIT / GitHub',
       tech:'GIT',
       college:'',
       certificate:''
@@ -50,40 +50,40 @@ const FormationData = [
       certificate:'logica'
     },
     {
-      date:'Em Breve',
+      date:'Estudando',
       name:'SASS / SCSS',
       tech:'SASS',
       college:'Udemy - SASS e SCSS do básico ao avançado',
       certificate:''
     },
-    {
-      date:'Em Breve',
-      name:'SQL / mysql',
-      tech:'mysql',
-      college:'Udemy - SQL com MySql',
-      certificate:''
-    },
-    {
-      date:'Em Breve',
-      name:'PHP',
-      tech:'PHP',
-      college:'Udemy - .... ',
-      certificate:''
-    },
-    {
-      date:'Em Breve',
-      name:'ADOBE XD',
-      tech:'ADOBE XD',
-      college:'Udemy - .... ',
-      certificate:''
-    },
-    {
-      date:'Em Breve',
-      name:'FIGMA',
-      tech:'FIGMA',
-      college:'Udemy - .... ',
-      certificate:''
-    },
+    // {
+    //   date:'Em Breve',
+    //   name:'SQL / mysql',
+    //   tech:'mysql',
+    //   college:'Udemy - SQL com MySql',
+    //   certificate:''
+    // },
+    // {
+    //   date:'Em Breve',
+    //   name:'PHP',
+    //   tech:'PHP',
+    //   college:'Udemy - .... ',
+    //   certificate:''
+    // },
+    // {
+    //   date:'Em Breve',
+    //   name:'ADOBE XD',
+    //   tech:'ADOBE XD',
+    //   college:'Udemy - .... ',
+    //   certificate:''
+    // },
+    // {
+    //   date:'Em Breve',
+    //   name:'FIGMA',
+    //   tech:'FIGMA',
+    //   college:'Udemy - .... ',
+    //   certificate:''
+    // },
   ]
   
   export default FormationData;

@@ -1,53 +1,78 @@
-import React, { useEffect, useState } from 'react'
-import BoxGlass from '../../components/BoxGlass/BoxGlass'
-import Title from '../../components/Title/TitlePage'
-import './Formation.css'
-import FormationData from '../../data/FormationData'
-
-import { IconName, IoSchool } from "react-icons/io5";
+import React, { useState } from 'react';
+import Bubble from '../../components/Bubble/Bubble';
 import ModelSection from '../../components/ModelSection/ModelSection';
+import styles from './Formation.module.css';
+import TechsData from '../../data/TechsData';
+import { IoPeopleOutline, IconName, IoSchool } from 'react-icons/io5';
+import { motion } from "framer-motion";
 import Loader from '../../components/Loader/Loader';
 
-const Formation = () => {
+import BoxGlass from '../../components/BoxGlass/BoxGlass'
+import Title from '../../components/Title/TitlePage'
+import FormationData from '../../data/FormationData';
+import Modal from '../../components/Modal/Modal';
 
-    const [formationItem, setFormationItme] = useState(FormationData);
+const Skills = () => {
 
-    return (
-        <Loader>
-            <ModelSection id='formation'>
-                <div className='formation-container'>
-                    <div className='formation-title'>
-                        <Title name='Formation' />
-                    </div>
-                    <div className='grid-formation'>
-                        <div>
-                            {
-                                formationItem.map((item, i) => {
-                                    return (
-                                        <div className='formation-item' key={i}>
-                                            <span className='timeline-formation'>
-                                                <span className='timeline-formation-ball'></span>
-                                            </span>
-                                            <BoxGlass customClass='fullWidth'>
-                                                <div className='content'>
-                                                    <div className='formation-date'>
-                                                        <p className='formation-icon' src='#' alt='C'>{<IoSchool />}</p>
-                                                        <p className='formation-date'>{item.date}</p>
-                                                    </div>
-                                                    <p className='formation-name'>{item.name}</p>
-                                                    <p className='formation-college'>{item.college}</p>
-                                                </div>
-                                            </BoxGlass>
-                                        </div>
-                                    )
-                                })
-                            }
+  const [techsItem] = useState(TechsData);
+  const [formationItem] = useState(FormationData);
+
+  const [showModal, setShowModal] = useState(false);
+  const [cert, setCert] = useState('')
+
+  const toggleModal = (item) => {
+    setShowModal(!showModal);
+    setCert(item);
+    console.log(item)
+  }
+  return (
+    <Loader>
+      <ModelSection customClass='column'>
+        <div className={styles.formation_container}>
+          <div className={styles.formation_title}>
+            <Title name='Formation' />
+          </div>
+          <div className={styles.grid_formation}>
+            {
+              formationItem.map((item, i) => {
+                return (
+                  <div className={styles.formation_item} key={i}>
+                    <span className={styles.timeline_formation}>
+                      <span className={styles.timeline_formation_ball}></span>
+                    </span>
+                    <BoxGlass customClass='fullWidth'>
+                      <div className={styles.content}>
+                        <div className={styles.formation_date}>
+                          <p className={styles.formation_icon} src='#' alt='C'>{<IoSchool />}</p>
+                          <p className={styles.formation_date}>{item.date}</p>
                         </div>
-                    </div>
-                </div>
-            </ModelSection>
-        </Loader>
-    )
+                        <div className={styles.formation_box_description}>
+                          <div>
+                            {item.tech === "" ? <Bubble customClass="none"></Bubble> : <Bubble customClass='medium' >
+                              <img src={`../public-images/techs/${item.tech}.png`} alt="" />
+                            </Bubble>}
+                          </div>
+                          <div className={styles.formation_description}>
+                            <p className={styles.formation_name}>{item.name}</p>
+                            <p className={styles.formation_college}>{item.college}</p>
+                          </div>
+                        </div>
+                        {item.certificate === "" ? '' : <button onClick={()=>toggleModal(item.certificate)} className={styles.bt_cert}>Ver Certificado</button>}
+
+                      </div>                  
+                    </BoxGlass>
+                  </div>
+                )
+              })
+            }
+          </div>
+          <Modal showModal={showModal} toggleModal={toggleModal} download={false}>
+            <img src={`../public-images/certificados/${cert}.png`} alt={cert} />
+          </Modal>
+        </div>
+      </ModelSection >
+    </Loader>
+  )
 }
 
-export default Formation
+export default Skills
