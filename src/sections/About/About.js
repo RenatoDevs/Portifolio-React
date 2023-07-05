@@ -9,9 +9,6 @@ import { motion } from "framer-motion";
 
 
 const About = () => {
-    let date = new Date();
-    let yearD = date.getFullYear()
-    let idade = yearD - 1998;
 
     /* Aqui vou dispor uma breve descrição minha 
         plano de fundo uma imagem de santo andré
@@ -29,9 +26,6 @@ const About = () => {
                         <div className={styles.box_title}>
                             <Title name='About' />
                         </div>
-                        <p>
-                            Olá, eu sou Renato dos Santos tenho {idade} anos, sou um apaixonado por tecnologia, decidi trilhar o caminho da programação, atualmente estou focado em desenvolvimento Web. Trabalho com as stacks:  ReactJS | SASS| JavaScript | HTML | CSS | Git.
-                        </p>
                         <p>
                             Busco recolocação profissional, Atualmente Trabalho em uma Fábrica de peças automotivas, nestes 6 anos, pude me desenvolver de forma pessoal e profissionalmente, onde iniciei como ajudante da montagem, ao passar do tempo fui assumindo responsabilidades.
                         </p>

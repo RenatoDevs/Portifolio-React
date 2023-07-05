@@ -6,6 +6,9 @@ import SocialButtons from '../../components/SocialButtons/SocialButtons';
 import Loader from '../../components/Loader/Loader';
 
 const Home = () => {
+
+    let date = new Date();
+    let idade = date.getFullYear() - 1998;
     return (
         <Loader>
             <ModelSection >
@@ -37,6 +40,9 @@ const Home = () => {
                     <div className={styles.job}>
                         <span>Front End Developer</span>
                     </div>
+                        <p className={styles.desc}>
+                            Olá, eu sou Renato dos Santos tenho {idade} anos, sou um apaixonado por tecnologia, decidi trilhar o caminho da programação começando pelo desenvolvimento Web. Trabalho com as stacks:  ReactJS | SASS| JavaScript | HTML | CSS | Git.
+                        </p>
                 </div>
 
             </ModelSection>

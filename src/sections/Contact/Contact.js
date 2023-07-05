@@ -8,13 +8,7 @@ import CvModelo from '../../assets/img/RENATO DOS SANTOS - DEV FRONT END.png';
 import Modal from '../../components/Modal/Modal';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [assunto, setAssunto] = useState('');
-  const [message, setMessage] = useState('');
-
   const [showModal, setShowModal] = useState(false);
-
   const toggleModal = () => {
     setShowModal(!showModal);
   }
@@ -27,40 +21,31 @@ const Contact = () => {
         </div>
         <div className={styles.container}>
           <div className={styles.desc_contact}>
-            <form onSubmit={() => { }}>
-              <p>Fique a vontade para me enviar uma mensagem.</p>
+
+            <form action="https://formsubmit.co/santos.renato@hotmail.com" method="POST">
+              <div>
+                <label>
+                  <input
+                    type="text" name="name" required placeholder='Nome'
+                  />
+                </label>
+                <label>
+                  <input
+                    type="email" name="email" required placeholder='email'
+                  />
+                </label>
+              </div>
               <label>
                 <input
-                  type="text"
-                  placeholder="Digite seu nome e sobrenome"
-                  onChange={(e) => setName(e.target.value)}
-                  value={name}
-                />
-              </label>
-              <label>
-                <input
-                  type="text"
-                  placeholder="Digite seu email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                />
-              </label>
-              <label>
-                <input
-                  type="text"
-                  placeholder="Digite o assunto"
-                  onChange={(e) => setAssunto(e.target.value)}
-                  value={assunto}
+                  type="text" name="subject" required placeholder='Assunto'
                 />
               </label>
               <label>
                 <textarea
-                  placeholder="Digite sua mensagem..."
-                  onChange={(e) => setMessage(e.target.value)}
-                  value={message}
+                  type="text" name="messag" required placeholder='Mensagem'
                 />
               </label>
-              <input type="submit" value="Enviar Mensagem" />
+              <button type="submit">Enviar</button>
             </form>
           </div>
           <div className={styles.contact_container}>
