@@ -26,7 +26,7 @@ const Skills = () => {
       <ModelSection customClass='column'>
         <div className={styles.formation_container}>
           <div className={styles.formation_title}>
-            <Title name='Formation' />
+            <Title name='Formação' />
           </div>
           <div className={styles.grid_formation}>
             {

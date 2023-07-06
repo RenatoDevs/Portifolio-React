@@ -50,7 +50,13 @@
   background: var(--red-gradiente);
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.527);
 }
-
+.desc_contact{
+  flex-direction: column;
+}
+.desc_contact span{
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
 
 .desc_contact form {
   width: 100%;

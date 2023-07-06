@@ -20,26 +20,26 @@ const NavBar = ({ toggle }) => {
           <li className={styles.about}>
             <NavLink to='/about' className={({ isActive }) => (isActive ? styles.active : '')}>
               <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoPersonOutline /></Bubble></span>
-              <span className={styles.text}>About</span>
+              <span className={styles.text}>Sobre</span>
             </NavLink>
           </li>
 
           <li className={styles.Formation}>
             <NavLink to='/Formation' className={({ isActive }) => (isActive ? styles.active : '')}>
               <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoSchoolOutline /></Bubble></span>
-              <span className={styles.text}>Formation</span>
+              <span className={styles.text}>Formação</span>
             </NavLink>
           </li>
           <li className={styles.project}>
             <NavLink to='/projects' className={({ isActive }) => (isActive ? styles.active : '')}>
               <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoDesktopOutline /></Bubble></span>
-              <span className={styles.text}>Project</span>
+              <span className={styles.text}>Projetos</span>
             </NavLink>
           </li>
           <li className={styles.contact}>
             <NavLink to='/contact' className={({ isActive }) => (isActive ? styles.active : '')}>
               <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoChatboxOutline /></Bubble></span>
-              <span className={styles.text}>Contact</span>
+              <span className={styles.text}>Contato</span>
             </NavLink>
           </li>
         </ul>

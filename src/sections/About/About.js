@@ -20,7 +20,7 @@ const About = () => {
 
                     <div className={styles.box_description}>
                         <div className={styles.box_title}>
-                            <Title name='About' />
+                            <Title name='Sobre Mim' />
                         </div>
                         <div className={styles.text}>
                             <p>
