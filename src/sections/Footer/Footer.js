@@ -10,7 +10,7 @@ const Footer = () => {
           <span>RS</span>
         </div>
         <div className='copy'>
-          <span>&copy; Desenvolvido por Renato dos Santos <span className='emoji'>❤</span></span>
+          <span>&copy; 2023 Desenvolvido por Renato dos Santos <span className='emoji'>❤</span></span>
         </div>
         <SocialButtons />
       </div>

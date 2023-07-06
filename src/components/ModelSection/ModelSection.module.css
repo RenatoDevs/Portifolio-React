@@ -8,13 +8,3 @@
     position: relative;
 }
 
-/* .model-section-container:nth-child(odd){
-    background-color: #ccc;
-} */
-
-.model_section_container.flex-start{
-    justify-content: flex-start;
-}
-.model_section_container.space-evenly{
-    justify-content: space-evenly;
-}

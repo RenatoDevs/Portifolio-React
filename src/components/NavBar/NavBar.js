@@ -30,18 +30,6 @@ const NavBar = ({ toggle }) => {
               <span className={styles.text}>Formation</span>
             </NavLink>
           </li>
-          {/* <li className={styles.skills}>
-            <NavLink to='/skills' className={({ isActive }) => (isActive ? styles.active : '')}>
-              <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoPlanetOutline /></Bubble></span>
-              <span className={styles.text}>Skills</span>
-            </NavLink>
-          </li> */}
-          {/* <li className={styles.formation}>
-            <NavLink to='/formation' className={({ isActive }) => (isActive ? styles.active : '')}>
-              <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoSchoolOutline /></Bubble></span>
-              <span className={styles.text}>Formation</span>
-            </NavLink>
-          </li> */}
           <li className={styles.project}>
             <NavLink to='/projects' className={({ isActive }) => (isActive ? styles.active : '')}>
               <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoDesktopOutline /></Bubble></span>
@@ -54,14 +42,7 @@ const NavBar = ({ toggle }) => {
               <span className={styles.text}>Contact</span>
             </NavLink>
           </li>
-          {/* <li className={styles.curriculo}>
-            <NavLink to='/cv' className={({ isActive }) => (isActive ? styles.active : '')}>
-              <span className={styles.icon}><Bubble customClass='small-menu-padding'><IoSchoolOutline /></Bubble></span>
-              <span className={styles.text}>CV</span>
-            </NavLink>
-          </li> */}
         </ul>
-
       </div >
     </div>
   )

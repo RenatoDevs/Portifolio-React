@@ -2,18 +2,14 @@ import styles from './About.module.css';
 import Title from '../../components/Title/TitlePage';
 import ModelSection from '../../components/ModelSection/ModelSection';
 import foto from '../../assets/img/re.jpg';
-import React from 'react';
 import Loader from '../../components/Loader/Loader';
 import TitleShadow from '../../components/TitleShadow/TitleShadow';
 import { motion } from "framer-motion";
 
 
 const About = () => {
-
-    /* Aqui vou dispor uma breve descrição minha 
-        plano de fundo uma imagem de santo andré
-        a frente uma foto minha e ao lado a descrição 
-    */
+    let date = new Date();
+    let idade = date.getFullYear() - 1998;
     return (
         <Loader>
             <ModelSection>
@@ -26,12 +22,17 @@ const About = () => {
                         <div className={styles.box_title}>
                             <Title name='About' />
                         </div>
-                        <p>
-                            Busco recolocação profissional, Atualmente Trabalho em uma Fábrica de peças automotivas, nestes 6 anos, pude me desenvolver de forma pessoal e profissionalmente, onde iniciei como ajudante da montagem, ao passar do tempo fui assumindo responsabilidades.
-                        </p>
-                        <p>
-                            Hoje sou Responsável pelo setor de fabricação de almas, que envolvem, a equipe de fabricação e parte da área de solda, o controle de qualidade e medidas, estoque, pedidos e recebimentos de materiais, pedidos e envios ao cliente, bem como recebimento e o atendimento aos clientes quando necessário.
-                        </p>
+                        <div className={styles.text}>
+                            <p>
+                                Olá, eu sou Renato dos Santos tenho {idade} anos, sou um apaixonado por tecnologia, decidi trilhar o caminho da programação começando pelo desenvolvimento Web.
+                            </p>
+                            <p>
+                                Busco recolocação profissional, Atualmente Trabalho em uma Fábrica de peças automotivas, nestes 6 anos, pude me desenvolver de forma pessoal e profissionalmente, onde iniciei como ajudante da montagem, ao passar do tempo fui assumindo responsabilidades.
+                            </p>
+                            <p>
+                                Hoje sou Responsável pelo setor de fabricação de almas, que envolvem, a equipe de fabricação e parte da área de solda, o controle de qualidade e medidas, estoque, pedidos e recebimentos de materiais, pedidos e envios ao cliente, bem como recebimento e o atendimento aos clientes quando necessário.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.grid_skills}>
@@ -62,15 +63,6 @@ const About = () => {
                         </ul>
                     </div>
                 </div>
-                {/* <div className={styles.hobby}>
-                <TitleShadow customClass='titleShadowLight' title='Hobbys' />
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div> */}
             </ModelSection>
         </Loader>
     )

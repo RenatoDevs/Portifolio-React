@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Bubble from '../../components/Bubble/Bubble';
 import ModelSection from '../../components/ModelSection/ModelSection';
 import styles from './Formation.module.css';
-import TechsData from '../../data/TechsData';
 import { IoPeopleOutline, IconName, IoSchool } from 'react-icons/io5';
 import { motion } from "framer-motion";
 import Loader from '../../components/Loader/Loader';
@@ -13,10 +12,7 @@ import FormationData from '../../data/FormationData';
 import Modal from '../../components/Modal/Modal';
 
 const Skills = () => {
-
-  const [techsItem] = useState(TechsData);
   const [formationItem] = useState(FormationData);
-
   const [showModal, setShowModal] = useState(false);
   const [cert, setCert] = useState('')
 

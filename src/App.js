@@ -10,9 +10,6 @@ import Formation from './sections/Formation/Formation';
 import ProjectPage from './sections/ProjectPage/ProjectPage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import Curriculo from './sections/Curriculo/Curriculo';
-
-import { BsMoon, BsSun } from "react-icons/bs";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -31,7 +28,6 @@ function App() {
         <Routes>
           <Route path='/' exact={true} element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/cv' element={<Curriculo />} />
           <Route path='/formation' element={<Formation />} />
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
