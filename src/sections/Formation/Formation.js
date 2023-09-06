@@ -45,7 +45,7 @@ const Skills = () => {
                         <div className={styles.formation_box_description}>
                           <div>
                             {item.tech === "" ? <Bubble customClass="none"></Bubble> : <Bubble customClass='medium' >
-                              <img src={`../public-images/techs/${item.tech}.png`} alt="" />
+                              <img src={`../public-images/techs/${item.name}.png`} alt="" />
                             </Bubble>}
                           </div>
                           <div className={styles.formation_description}>

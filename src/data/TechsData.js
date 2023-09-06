@@ -3,7 +3,6 @@ const TechsData = [
     {
       name:'html',
       conhecimento:['Semantico']
-      
     },
     {
         name:'css',

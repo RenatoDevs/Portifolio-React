@@ -37,39 +37,39 @@ const FormationData = [
     },
     {
       date:'',
-      name:'GIT / GitHub',
+      name:'GIT',
       tech:'GIT',
       college:'',
       certificate:''
     },
     {
       date:'Mai 2023 - 20 horas',
-      name:'Lógica de Programação',
+      name:'lógica',
       tech:'logica',
       college:'SoftBlue',
       certificate:'logica'
     },
+    // {
+    //   date:'Estudando',
+    //   name:'SASS / SCSS',
+    //   tech:'SASS',
+    //   college:'Udemy - SASS e SCSS do básico ao avançado',
+    //   certificate:''
+    // },
     {
-      date:'Estudando',
-      name:'SASS / SCSS',
-      tech:'SASS',
-      college:'Udemy - SASS e SCSS do básico ao avançado',
+      date:'Em Breve',
+      name:'mysql',
+      tech:'mysql',
+      college:'Udemy - SQL com MySql',
       certificate:''
     },
-    // {
-    //   date:'Em Breve',
-    //   name:'SQL / mysql',
-    //   tech:'mysql',
-    //   college:'Udemy - SQL com MySql',
-    //   certificate:''
-    // },
-    // {
-    //   date:'Em Breve',
-    //   name:'PHP',
-    //   tech:'PHP',
-    //   college:'Udemy - .... ',
-    //   certificate:''
-    // },
+    {
+      date:'Em Breve',
+      name:'PHP',
+      tech:'PHP',
+      college:'Udemy - .... ',
+      certificate:''
+    },
     // {
     //   date:'Em Breve',
     //   name:'ADOBE XD',

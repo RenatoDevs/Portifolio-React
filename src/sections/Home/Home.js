@@ -9,7 +9,7 @@ import Bubble from '../../components/Bubble/Bubble';
 
 const Home = () => {
     const [formationItem] = useState(FormationData);
-    
+
     return (
         <Loader>
             <ModelSection>
@@ -42,21 +42,20 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className={styles.desc}>
-                        <div className={styles.techs}>
-                            {formationItem.map((item, i) => {
-                                return (
-                                    <div className={styles.formation_item} key={i}>
-                                        <div>
-                                            {item.tech === "" ? <Bubble customClass="none"></Bubble> : <Bubble customClass='small-menu' >
-                                                <img src={`../public-images/techs/${item.tech}.png`} alt="" />
-                                            </Bubble>}
-                                        </div>
-                                    </div>
-                                )
-                            })
-                            }
-                        </div>
+
+                    <div className={styles.techs}>
+                        {formationItem.map((item, i) => {
+                            return (
+                                <div className={styles.formation_item} key={i}> 
+                                    {item.tech === ""? <Bubble customClass="none"></Bubble> : <Bubble customClass='small-menu' >
+                                        <img src={`../public-images/techs/${item.name}.png`} alt={item.name} />
+                                    </Bubble>}
+                                    <div className={styles.tech_desc}>{item.tech}</div>
+                                </div>
+                                
+                            )
+                        })
+                        }
                     </div>
                 </div>
             </ModelSection>

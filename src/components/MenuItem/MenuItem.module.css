@@ -101,7 +101,7 @@
     
 }
 .stamp::before{
-    content: 'Responsive';
+    content: 'Responsivo';
     display: flex;
     justify-content: center;
     align-items: center;

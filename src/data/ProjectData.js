@@ -10,15 +10,25 @@ const ProjectData = [
   //   linkPage: '',
   //   linkRepo: ''
   // },
+  // {
+    
+  //   category: 'React',
+  //   img: 'dsmovie',
+  //   title: 'DSMovie',
+  //   description: 'Esse Projeto foi desenvolvido durante a semana Spring React, edição 6.0, ministrado pelo Excelente Professor Nelio Muniz Mendes Alves, onde criamos uma aplicação web usando Java com Spring Boot no back end, TypeScript com ReactJS no front end. O Objetivo principal do projeto foi o uso de componentes, hooks, passagens de parâmetros,  e a integração com o back end. ',
+  //   tec: ['React', 'Node', 'css'],
+  //   linkPage: 'https://rsmovie.netlify.app/',
+  //   linkRepo: 'https://github.com/RenatoDevs/dsmovie'
+  //},
   {
     
-    category: 'React',
-    img: 'dsmovie',
-    title: 'DSMovie',
-    description: 'Esse Projeto foi desenvolvido durante a semana Spring React, edição 6.0, ministrado pelo Excelente Professor Nelio Muniz Mendes Alves, onde criamos uma aplicação web usando Java com Spring Boot no back end, TypeScript com ReactJS no front end. O Objetivo principal do projeto foi o uso de componentes, hooks, passagens de parâmetros,  e a integração com o back end. ',
-    tec: ['React', 'Node', 'css'],
-    linkPage: 'https://rsmovie.netlify.app/',
-    linkRepo: 'https://github.com/RenatoDevs/dsmovie'
+    category: 'JavaScript',
+    img: 'academia',
+    title: 'TopGym',
+    description: 'Este projeto é uma página de uma academia, onde podemos consultar os serviços e valores da mesma, calcular o seu imc, consultar localidade das unidades. ',
+    tec: ['javascript', 'html', 'css'],
+    linkPage: 'https://topgymrs.netlify.app/',
+    linkRepo: 'https://github.com/RenatoDevs/TopGym_academia'
   },
   {
     
@@ -60,16 +70,16 @@ const ProjectData = [
     linkPage: 'https://studiomoveis.netlify.app/',
     linkRepo: 'https://github.com/RenatoDevs/StudioMoveis'
   },
-  {
+  // {
     
-    category: 'JavaScript',
-    img: 'coca-cola',
-    title: 'Coca Cola',
-    description: 'Esse projeto eu desenvolvi, com base em uma video aula do youtbe, para treinar html e css, onde apesar de simples achei muito interessante o resultado final. ',
-    tec: ['javascript', 'html', 'css'],
-    linkPage: 'https://ccola.netlify.app/',
-    linkRepo: 'https://github.com/RenatoDevs/coca-cola'
-  },
+  //   category: 'JavaScript',
+  //   img: 'coca-cola',
+  //   title: 'Coca Cola',
+  //   description: 'Esse projeto eu desenvolvi, com base em uma video aula do youtbe, para treinar html e css, onde apesar de simples achei muito interessante o resultado final. ',
+  //   tec: ['javascript', 'html', 'css'],
+  //   linkPage: 'https://ccola.netlify.app/',
+  //   linkRepo: 'https://github.com/RenatoDevs/coca-cola'
+  // },
   {
     
     category: 'JavaScript',
@@ -100,16 +110,6 @@ const ProjectData = [
     linkPage: 'https://barbershoprs.netlify.app/',
     linkRepo: 'https://github.com/RenatoDevs/BarberShop'
   },
-  {
-    
-    category: 'JavaScript',
-    img: 'academia',
-    title: 'TopGym',
-    description: 'Este projeto é uma página de uma academia, onde podemos consultar os serviços e valores da mesma, calcular o seu imc, consultar localidade das unidades. ',
-    tec: ['javascript', 'html', 'css'],
-    linkPage: 'https://topgymrs.netlify.app/',
-    linkRepo: 'https://github.com/RenatoDevs/TopGym_academia'
-  },
   // {
   //   
   //   category: 'JavaScript',
@@ -120,17 +120,17 @@ const ProjectData = [
   //   linkPage: '',
   //   linkRepo: ''
   // },
-  {
+  // {
     
-    category: 'JavaScript',
-    img: 'snake',
-    title: 'Snake',
-    description: 'Este projeto foi desenvolvido durante modulo de javascript, html e css, onde utilizamos o canvas para a projeção da cobra e o javascripit para realizar o game de fato. ',
+  //   category: 'JavaScript',
+  //   img: 'snake',
+  //   title: 'Snake',
+  //   description: 'Este projeto foi desenvolvido durante modulo de javascript, html e css, onde utilizamos o canvas para a projeção da cobra e o javascripit para realizar o game de fato. ',
     
-    tec: ['javascript', 'html', 'css'],
-    linkPage: 'https://snake-js-renato.netlify.app/',
-    linkRepo: 'https://github.com/RenatoDevs/snake-Js'
-  },
+  //   tec: ['javascript', 'html', 'css'],
+  //   linkPage: 'https://snake-js-renato.netlify.app/',
+  //   linkRepo: 'https://github.com/RenatoDevs/snake-Js'
+  // },
   {
     
     category: 'JavaScript',
@@ -142,17 +142,17 @@ const ProjectData = [
     linkPage: 'https://jgmemoria.netlify.app/',
     linkRepo: ''
   },
-  {
+  // {
     
-    category: 'JavaScript',
-    img: 'jogo-da-velha',
-    title: 'Jogo da Velha',
-    description: '',
+  //   category: 'JavaScript',
+  //   img: 'jogo-da-velha',
+  //   title: 'Jogo da Velha',
+  //   description: '',
     
-    tec: ['javascript', 'html', 'css'],
-    linkPage: 'https://gamevelha.netlify.app/',
-    linkRepo: 'https://github.com/RenatoDevs/Jogo-da-velha'
-  },
+  //   tec: ['javascript', 'html', 'css'],
+  //   linkPage: 'https://gamevelha.netlify.app/',
+  //   linkRepo: 'https://github.com/RenatoDevs/Jogo-da-velha'
+  // },
   {
     
     category: 'JavaScript',
@@ -164,16 +164,16 @@ const ProjectData = [
     linkPage: '',
     linkRepo: ''
   },
-  {
+  // {
     
-    category: 'JavaScript',
-    img: 'pedra-papel-tesoura',
-    title: 'Pagina de login',
-    description: '',
-    tec: ['javascript', 'html', 'css'],
-    linkPage: 'https://gamejokenpo.netlify.app/',
-    linkRepo: 'https://github.com/RenatoDevs/Jokenpo'
-  },
+  //   category: 'JavaScript',
+  //   img: 'pedra-papel-tesoura',
+  //   title: 'Pagina de login',
+  //   description: '',
+  //   tec: ['javascript', 'html', 'css'],
+  //   linkPage: 'https://gamejokenpo.netlify.app/',
+  //   linkRepo: 'https://github.com/RenatoDevs/Jokenpo'
+  // },
   {
     
     category: 'JavaScript',
